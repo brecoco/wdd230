@@ -31,7 +31,7 @@
   }
 
     body {
-        font-size: 16px;
+        font-size: 1.5rem;
         line-height: 1.5;
         font-family: Arial, Helvetica, sans-serif;
         color: #032408;
@@ -62,15 +62,12 @@
         color: #ffffff;
     }
     
-    header {
-        margin-top: 10px;
-    }
+    
 
     header,
     nav,
     main,
     footer {
-        margin: 0 auto;
         padding: .75rem;
     }
 
