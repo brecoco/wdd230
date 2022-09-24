@@ -1,11 +1,11 @@
 @media only screen and (min-width: 50em) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.0rem;
 
   }
 
   h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   header, footer{
@@ -28,7 +28,7 @@
 
   
   header img {
-    width: 350px;
+    width: 370px;
     height: auto;
   }
 
