@@ -1,0 +1,31 @@
+@media only screen and (min-width: 50em) {
+  h1 {
+    font-size: 3.0rem;
+
+  }
+
+
+  header, footer{
+    border-radius: 10px;
+    }
+
+
+  .design_grid,
+  .site-personas {
+    grid-template-columns: 1fr 1fr;
+    }
+  
+  .persona-box {
+    grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul {
+      font-size: 2.5rem;  
+  }
+  
+  
+  section{
+    font-size: 2rem;
+  }
+
+}
