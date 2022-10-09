@@ -1,0 +1,21 @@
+@media only screen and (min-width: 60em) {
+
+    .design_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .alignment{
+        grid-column: 3;
+    }
+
+    header img {
+        width: 800px;
+        height: auto;
+      }
+
+      
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+}
