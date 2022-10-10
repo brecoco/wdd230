@@ -16,91 +16,58 @@
 </head>
 
 <body>
-    <div id="banner">
-        <p></p>
-    </div>
     <header>
-        <nav>
-            <a href="index.html"><img class="logo" src="../images/logo.jpg " alt= "chamber logo" width="50"></a>
-
-            <p class="commerceTitle"></p>
-            
-            
-            <ul class="menu">
-                <li><a class="hamBtn" href="#">Menu</a></li>
-                <li><a href="../chamber/discover.html">Discover</a></li>
-                <li><a href="../chamber/directory.html">Directory</a></li>
-                <li><a href="../chamber/join.html">Join</a></li>
-                <li><a href="../chamber/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="socials">
-            <a href="http://www.facebook.com"><img class="facebook" src="../images/fb.webp" alt="facebook icon" width="24"
-                    height="24"></a>
-            <a href="http://www.twitter.com"><img class="twitter" src="../images/twitter.webp" alt="twitter icon"
-                    width="24" height="24"></a>
+        <img src="../chamber/images/logo.jpg " alt= "chamber logo">
+        <div class="chambertitle">
+          <h1>Brecoco</h1>
+          <h2>Chamber of Commerce</h2>
         </div>
-        <div id="today"></div>
+    </header>            
+
+    <nav>
+        <!-- add hamburger menu button - &#9776 is the code for the symbol -->
+        <button id="button"><span>&#9776;</span><span>X</span></button>
+        <ul id="ulList">
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social"> 
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+      <div class="currentdate"><span id="currentdate"></span></div>
     </header>
-    <br>
-
     <main>
-        <div id="chamber-content">
-            <div id="action">
-                <picture>
-                    <source srcset="/images/wdd230-org.jpg" media="(max-width: 600px)">
-                    <img class="heroImg" src="../images/wdd230-org.jpg" alt="chamber conversation" />
-                </picture>
-                <div class="joinBtn">
-                    <a class="heroBtn" href="/chamber/join.html">Join the chamber</a>
-                </div>
-            </div>
-            <div id="events">
-                <h1></h1>
-                <h2></h2>
-                <p></p>
-                <a href="#">More Info...</a>
-            </div>
-            <div id="weather">
-                <h2 class="weather"></h2>
-                <img class="weatherIcon" src="#" alt="">
-                <p class="degree"><span class="temp"></span>&#176;</p>
-                <p class="iconDesc"></p>
-                <p class="ws"></p>
-                <p class="windSpeed"></p>
-                <p class="wc"></p>
-                <p class="wChill"><span class="windChill"></span></p>
-            </div>
-            <div id="news">
-                <h1></h1>
-                <p></p>
-            </div>
-            <div id="spotlights">
-                
-
-            </div>
-            <div id="join">
-                <div class="joinUsBtn">
-                    <a class="join" href="join.html">Join Us!</a>
-                </div>
-                <p></p>
-            </div>
-
-
-        </div>
-
+      <div class="event"><h3>Event</h3></div>
+      <div class="hero"><h3>Hero with site name and call to action</h3></div>
+      <div class="nested">
+        <div class="spotlight1"><h3>Spotlight 1</h3></div>
+        <div class="spotlight2"><h3>Spotlight 2</h3></div>
+        <div class="spotlight3"><h3>Spotlight 3</h3></div>
+      </div>
+      <div class="weather"><h3>Weather</h3></div>
+      <div class="join"><h3>Join</h3></div>
+      <div class="release"><h3>News Release</h3></div>
     </main>
     <footer>
+      <div class="footerImg"><img src="../chamber/images/logo.jpg " alt= "chamber logo"></div>
+      <div class="footerTitle">
+        <h2>Brecoco</h2>
+        <h4>Av Rangel Pestana 300</h4>
+        <h4>São Paulo, SP - 01017-911</h4>
+      </div>
+      <div class="contactInfo">
+        <h4>info@brecoco.com</h4>
+        <h4>+(55)11 9999-9999 </h4>
+      </div>
         <p>&copy; <span id="year"></span> | Thiago Silva | Brazil | <a href="http://www.byui.edu/online/" target="_blank">BYU-I Online Learning</a></p><br>
         <p class="lastupdated">Last  Updated: </p><span id="updated">
         </span>
         <script src="scripts/date.js"></script>
     </footer>
-</body>
-<script src="js/responsive_menu.js"></script>
-<script src="js/windchill.js"></script>
-<script src="../js/date.js"></script>
-<script src="js/spotlights.js"></script>
-
-</html>
+  
+  </body>
+  </html>
