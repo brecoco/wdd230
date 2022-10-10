@@ -25,6 +25,9 @@
   
     nav ul li a {
       border-top: none;
+      font-size: 4rem;
+      width: 50%;
+      padding-right: 6.5rem;
     }
   
     .event {
