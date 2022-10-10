@@ -60,20 +60,6 @@ img {
     padding: 20px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .chambertitle {
   grid-column: 2/3;
 }
@@ -215,9 +201,7 @@ footer {
 } 
 
 .footerImg {
-  display: block;
-  width: 50%;
-  margin-left: 38%;
+  min-width: 100%;
 }
 
 .footerTitle {
@@ -234,6 +218,14 @@ footer {
   text-align: center;
 }
 
+.developerinfo{
+  grid-column: 1/4;
+  grid-row: 2/2;
+  text-align: center;
+  border-top: 2px solid white;
+  padding-top: 8px;
+  font-size: 1.5rem;
+}
 
 
 #button span:nth-child(1) {display: block;}
