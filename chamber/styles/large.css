@@ -4,7 +4,7 @@
     }
   
     h1, h2, h4 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     
     #button {
@@ -12,9 +12,9 @@
     }
   
     .social {
-      grid-column: 4/5;
+      grid-column: 5/5;
       grid-row: 1;
-      margin-right: auto;
+      margin-right: 50%;
     }
   
     nav ul {

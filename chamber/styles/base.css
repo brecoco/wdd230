@@ -15,7 +15,6 @@ footer{
 header {
     display: grid;
     grid-template-columns: 20% 1fr 1fr 1fr 1fr;
-    margin: 1.25rem auto;
     padding: 10px;
     align-items: center;
     min-width: 350px;
@@ -51,6 +50,29 @@ img {
   width: 50%;
 }
 
+.currentdate {
+    grid-column: 2/5;
+    grid-row: 2;
+    text-align: center;
+    border: 2px solid white;
+    background-color: black;
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .chambertitle {
   grid-column: 2/3;
 }
@@ -60,15 +82,14 @@ nav button {
 }
 
 nav ul{
-  display: none;
-  grid-column: 4/5;
-  grid-row: 1;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  background: transparent;
-  border: none;
-}
+    grid-column: 4/4;
+    grid-row: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+  }
   
 nav ul.open{
   display: block;
@@ -76,15 +97,14 @@ nav ul.open{
 
 nav ul li a {
     display: block;
-    padding: .2rem 2vw;
-    border-top: 1px solid rgba(55,93,219);
+    border-top: 1px solid #ffffff;
     text-decoration: none;
     color: white;
     font-size: 1rem;
   }
   
 nav ul li a:hover {
-  background-color: #b12415;
+  background-color: #ffffff;
 }
 
 font {
@@ -103,14 +123,6 @@ font {
   margin-left: 20px;
 }
 
-.currentdate {
-  grid-column: 1/5;
-  grid-row: 2;
-  text-align: center;
-  border: 2px solid #b12415;
-  background-color: #b12415;
-  padding: 10px;
-}
 
 main {
   display: grid;
@@ -189,8 +201,14 @@ main {
   text-align: center;
 }
 
-footer {
-  display: block;
+
+
+
+
+
+footer {    
+  display: grid;  
+  grid-template-columns: 20% 1fr 1fr 1fr 1fr;
   background-color: #b12415;
   color:white; 
 } 
@@ -202,27 +220,25 @@ footer {
 }
 
 .footerTitle {
-  margin-top: 10px;
-  grid-column: 2/3;
+  margin-top: 8px;
+  grid-column: 3/3;
   grid-row: 1/2;
   text-align: center;
 }
 
 .contactInfo {
   margin-top: 20px;
-  grid-column: 3/4;
+  grid-column: 2/4;
   grid-row: 1/2;
   text-align: center;
 }
 
 .date {
-  grid-column: 1/4;
-  grid-row: 2/3;
-  text-align: center;
-  border-top: 2px solid #b12415;
-  padding-top: 8px;
-  font-size: .8rem;
-}
+    text-align: center;
+    padding-top: 8px;
+    font-size: 8rem;
+  }
+
 
 #button span:nth-child(1) {display: block;}
 #button span:nth-child(2) {display: none;}
