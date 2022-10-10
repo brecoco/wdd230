@@ -12,10 +12,10 @@
     }
   
     .social {
-      grid-column: 4/6;
+      grid-column: 4/4;
       grid-row: 1;
       margin-right: 50%;
-      width: 50%;
+      min-width: 70%;
     }
 
     
