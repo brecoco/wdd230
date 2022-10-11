@@ -8,13 +8,12 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 }
 
 
-header {
+header, footer {
+	display: flex;
   background-image: linear-gradient( to right, #7c2319,  #000000);
   background-color: #7c2319;
 	padding: 5px 0;
-	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	margin: 0 auto;
 	border-bottom: 1px solid #bbb;
 }
@@ -61,18 +60,6 @@ header {
 
 
 
-footer{
-    background-image: linear-gradient( to right, #7c2319,  #000000);
-    background-color: #7c2319;
-    color: #ffffff;
-}
-
-footer {
-    display: block;
-    text-align: center;
-    background-color: #7c2319;
-    color: #ffffff;
-  } 
 
 h1 {
     font-size: 1.5rem;
@@ -124,8 +111,6 @@ nav button {
 
 nav ul{
     display: none;
-    grid-column: 4/4;
-    grid-row: 1;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -233,40 +218,28 @@ main {
 }
 
 footer {    
-  display: grid;  
-  grid-template-rows: 1fr 1fr 1fr;
-  background-color: #b12415;
   color:white; 
 } 
 
-.footerImg {
-
-  min-width: 100%;
-}
 
 .footerTitle {
   margin-top: 8px;
-  grid-column: 3/3;
-  grid-row: 1/2;
   text-align: center;
+
 }
 
 .contactInfo {
   margin-top: 20px;
-  grid-column: 2/4;
-  grid-row: 1/2;
   text-align: center;
 }
 
 .developerinfo{
-  grid-column: 1/4;
-  grid-row: 2/2;
+  flex-basis: 100%;
   text-align: center;
   border-top: 2px solid white;
   padding-top: 8px;
   font-size: 1.5rem;
 }
-
 
 
 

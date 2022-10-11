@@ -1,7 +1,4 @@
 @media only screen and (min-width: 40rem) {
-    /* nav {
-      align-items: flex-end;
-    } */
   
     main {
       margin: 0px;
@@ -12,8 +9,6 @@
     }
     
     nav{
-      grid-row: 1/2;
-      grid-column: 3/6;
       margin-bottom: 8rem;
     }
     
@@ -23,27 +18,49 @@
     }
   
     footer {
-      display: grid;
-      grid-template-columns: 20% 1fr 1fr;
-      grid-template-rows: 1fr;
       margin: 10px 0px;
     }
   
   
     .footerTitle {
-      grid-column: 2/3;
-      grid-row: 1/2;
       text-align: center;
-      margin: auto;
     }
     
     .contactInfo {
-      grid-column: 3/4;
-      grid-row: 1/2;
       text-align: center;
-      margin: auto;
     }
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     .event {
       grid-column: 1/4;
       grid-row: 5;

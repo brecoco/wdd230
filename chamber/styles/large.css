@@ -10,12 +10,9 @@
     #button {
       display: none;
     }
-          
     
     nav ul {
       display: flex;
-      grid-column: 3/4;
-      grid-row: 1;
     }
   
     nav ul li a {
@@ -25,6 +22,42 @@
       padding-left: 3rem;
     }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     .event {
       grid-column: 1/2;
       grid-row: 1;
