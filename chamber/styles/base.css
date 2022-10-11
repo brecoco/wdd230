@@ -7,20 +7,65 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     box-sizing: border-box;
 }
 
-header,
+
+header {
+  background-image: linear-gradient( to right, #7c2319,  #000000);
+  background-color: #7c2319;
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+}
+
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+}
+
+.logo img {
+	width: 200px;
+	height: auto;
+}
+
+
+.headings {
+	display: flex;
+	flex-direction: column;
+	margin-left: .5rem;
+}
+
+.headings h1 {
+	font-size: 5.5rem;
+}
+
+.m {
+	letter-spacing: 1pt;
+	color: white;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.social {
+	margin-right: 1.5rem;
+}
+
+.social svg {
+	width: 6rem;
+	height: auto;
+}
+
+
+
+
 footer{
     background-image: linear-gradient( to right, #7c2319,  #000000);
     background-color: #7c2319;
     color: #ffffff;
 }
-
-header {
-    display: grid;
-    grid-template-columns: 20% 1fr 1fr 1fr 1fr;
-    padding: 10px;
-    align-items: center;
-    min-width: 350px;
-  } 
 
 footer {
     display: block;
@@ -28,7 +73,6 @@ footer {
     background-color: #7c2319;
     color: #ffffff;
   } 
-
 
 h1 {
     font-size: 1.5rem;
@@ -47,11 +91,7 @@ h3 {
     color: #ffffff;
 }
 
-
-img {
-  width: 50%;
-}
-
+/*
 .currentdate {
     grid-column: 1/6;
     grid-row: 2;
@@ -65,12 +105,25 @@ img {
 .chambertitle {
   grid-column: 2/3;
 }
+*/
+nav{
+  margin-top: 8rem;
+ }
+
+ 
+
+ button{
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+ }
 
 nav button {
   margin-left: 70%;
 }
 
 nav ul{
+    display: none;
     grid-column: 4/4;
     grid-row: 1;
     list-style-type: none;
@@ -99,17 +152,6 @@ nav ul li a:hover {
 font {
   font-weight: bold;
   font-size: 1rem;
-}
-
-.social {
-  grid-column: 5/6;
-  grid-row: 1;
-  margin-left: auto;
-}
-
-.social i {
-  padding: 2px;
-  margin-left: 20px;
 }
 
 
@@ -190,19 +232,15 @@ main {
   text-align: center;
 }
 
-
-
-
-
-
 footer {    
   display: grid;  
-  grid-template-columns: 20% 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   background-color: #b12415;
   color:white; 
 } 
 
 .footerImg {
+
   min-width: 100%;
 }
 
@@ -228,6 +266,9 @@ footer {
   padding-top: 8px;
   font-size: 1.5rem;
 }
+
+
+
 
 
 #button span:nth-child(1) {display: block;}

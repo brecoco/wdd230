@@ -10,20 +10,8 @@
     #button {
       display: none;
     }
-  
-    .social {
-      grid-column: 4/4;
-      grid-row: 1;
-      margin-right: 50%;
-      min-width: 70%;
-    }
-
+          
     
-    img {
-      width: 50%;
-      margin-left: 5rem;
-    }
-  
     nav ul {
       display: flex;
       grid-column: 3/4;
