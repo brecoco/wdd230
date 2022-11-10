@@ -1,113 +1,85 @@
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 30rem) {
   
-    main {
-      margin: 0px;
-    }
-
-    h1, h2, h3, h4 {
-      font-size: 2rem;
-    }
-    
-    nav{
-      margin-bottom: 8rem;
-    }
-    
-
-    nav ul.open{
-      display: block;
-    }
-  
-    footer {
-      margin: 10px 0px;
-    }
-  
-  
-    .footerTitle {
-      text-align: center;
-    }
-    
-    .contactInfo {
-      text-align: center;
-    }
-      
+  #container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4rem 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:"header header"
+                        "banner banner"
+                        "hero hero"
+                        "news news"
+                        "spotlight1 spotlight2"
+                        "join join" 
+                        "event weather"
+                        "footer footer";
+   }
 
 
+.himage{grid-area: himage;
+margin-top: 2rem;
+}
+
+img{width: 80px;
+margin-left: 1rem;}
+
+.title{  
+max-height: 6rem;
+}
+
+h1{
+font-size: 2rem;
+margin-top: 2rem;
+color: white;
+margin-left: 0.5rem;
+}
+
+h2{
+font-size: 0.7rem;
+color: white;
+margin-left: 0.5rem;
+}
 
 
+h3{
+	font-size: 1rem;
+}
+
+h4{
+	font-size: 0.7rem;
+	color: white;
+	margin-left: 0.5rem;
+}
 
 
+   
+.join{
+	display: flex;
+}
 
 
+.footer{
+	grid-template-columns: 1fr 2fr 2fr;
+	grid-template-rows: 1fr .2fr;
+	grid-column-gap: 10px;
+	grid-template-areas: "fimage ftitle contactinfo"
+                       "developerinfo developerinfo developerinfo";
+
+}
 
 
+.contactinfo{
+  margin-top: 2rem;
+}
 
+.ftitle{
+  margin-left: 2rem;
+}
 
+.fimage{
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    .event {
-      grid-column: 1/4;
-      grid-row: 5;
-    }
-  
-    .hero {
-      grid-column: 1/5;
-      grid-row: 1;
-    }
-  
-    .nested {
-      display: flex;
-      grid-column: 1/5;
-      grid-row: 3;
-      border: 2px solid #b12415;
-    }
-  
-    .spotlight1 {
-      flex: auto;
-      margin: 10px;
-    }
-  
-    .spotlight2 {
-      flex: auto;
-      margin: 10px;
-    }
-  
-    .weather {
-      grid-column: 4/5;
-      grid-row: 5;
-    }
-  
-    .join {
-      grid-column: 1/5;
-      grid-row: 4;
-    }
-  
-    .release {
-      grid-column: 1/5;
-      grid-row: 2;
-    }
-  
-    .spotlight3 {
-      display: none;
-    }
-
-    
-  
-  }
-
+}

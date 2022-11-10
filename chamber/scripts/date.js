@@ -1,11 +1,10 @@
-
 let today1 = new Date()
 let year = today1.getFullYear();
 let fulldate = `${year}`;
-document.querySelector("#year").textContent = fulldate;
+//document.querySelector("#year").textContent = fulldate;
 
 let lastmod = new Date(document.lastModified)
-document.querySelector("#updated").textContent = lastmod;
+//document.querySelector("#updated").textContent = lastmod;
 
 
 let todaystr = "";
