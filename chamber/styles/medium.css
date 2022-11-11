@@ -21,6 +21,11 @@
 margin-top: 2rem;
 }
 
+/*.hero{
+	background-image: url("../images/wdd230-org-400.jpg");
+	background-size: cover;
+}*/
+
 
 .title{  
 max-height: 6rem;

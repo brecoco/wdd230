@@ -19,8 +19,8 @@ body{
 	grid-row-gap: 10px;
 	grid-template-areas: "header"
 						 "banner"
-						 "news" 
 						 "hero"
+						 "news" 
 						 "event"	
 						 "weather"
 						 "spotlight1"
@@ -46,8 +46,6 @@ body{
 .himage{grid-area: himage;
 	margin-top: 1rem;
 }
-
-
 
 
 #imglogo{width: 80px;
@@ -136,10 +134,21 @@ svg{
 	border: 2px solid #b12415;
 	box-shadow: 0 0 10px #7c2319;}
 
-.hero{
-	grid-area: hero;
+/*.hero{
+	
 	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;}
+	box-shadow: 0 0 10px #7c2319;
+	background-image: url("../images/wdd230-org-200.jpg");
+	background-size: cover;
+}*/
+
+#imgwdd230{grid-area: hero;
+	max-width: 100%;
+	width: 347px;
+	width: auto;
+	height: auto;
+}
+
 .weather{
 	grid-area: weather;
 	border: 2px solid #b12415;
@@ -202,10 +211,6 @@ svg{
 						 "ftitle"
 						 "contactinfo"
 						 "developerinfo";
-
-
-						 
-
 }
 
 .fimage{grid-area: fimage;
@@ -227,6 +232,7 @@ font-size: 1rem;}
  .item{
 	background-color: white;
     min-height: 50px;
+	max-height: 200px;
     min-width: 50px;
     position: relative;
     font-weight: bold;

@@ -43,7 +43,10 @@
   max-height: 10rem;
 }
 
-
-
+#imgwdd230{
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
 
 }
