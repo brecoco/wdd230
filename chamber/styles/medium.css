@@ -85,4 +85,33 @@ h4{
   margin-left: 1rem;
 }
 
+
+
+#container2{
+	display: grid; 
+	grid-template-columns: 100%;
+	grid-template-rows: .8fr 4rem 1fr 1fr 1fr 2fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-areas: "header header"
+						 "banner2 banner2"
+						 "cityinfo cityinfo"
+						 "location population" 
+						 "economy curiosities"
+						 "footer footer";
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

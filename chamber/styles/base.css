@@ -29,6 +29,8 @@ body{
  }
 
 
+
+
 .header{
 	background-image: linear-gradient( to right, #7c2319,  #000000);
 	text-align: center;
@@ -292,6 +294,146 @@ font-size: 1rem;}
 	margin-bottom: 5rem;
 	margin:.5rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+#container2{
+	display: grid; 
+	grid-template-columns: 100%;
+	grid-template-rows: .8fr 4rem 1fr 1fr 1fr 1fr 1fr 2fr;
+	column-gap: 10px;
+	row-gap: 10px;
+	grid-template-areas: "header"
+						 "banner2"
+						 "cityinfo"
+						 "location" 
+						 "population" 
+						 "economy"
+						 "curiosities"
+						 "footer";
+ }
+
+
+ .item2{
+	background-color: white;
+    min-height: 50px;
+	max-height: 300px;
+    min-width: 50px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+ }
+
+
+ #banner2{
+	grid-area: banner2;
+	border: 2px solid black;
+	box-shadow: 0 0 10px #7c2319;
+	background-color: #000000;
+}
+
+#box-banner2{
+	font-size: 1.5rem;
+	color: white;
+	text-align: center;
+	margin-top: .9rem;
+}
+
+
+ .cityinfo{
+	grid-area: cityinfo;
+	border: 2px solid #b12415;
+	box-shadow: 0 0 10px #7c2319;
+	align-items: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#spflag{
+	display: block;
+	max-width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#spmap{
+	display: block;
+	max-width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.location{
+	grid-area: location;
+	border: 2px solid #b12415;
+	box-shadow: 0 0 10px #7c2319;
+	align-items: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.population{
+	grid-area: population;
+	border: 2px solid #b12415;
+	box-shadow: 0 0 10px #7c2319;
+	align-items: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.economy{
+	grid-area: economy;
+	border: 2px solid #b12415;
+	box-shadow: 0 0 10px #7c2319;
+	align-items: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.curiosities{
+	grid-area: curiosities;
+	border: 2px solid #b12415;
+	box-shadow: 0 0 10px #7c2319;
+	align-items: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
