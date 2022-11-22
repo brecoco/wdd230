@@ -132,7 +132,21 @@ svg{
 .event{
 	grid-area: event;
 	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;}
+	box-shadow: 0 0 10px #7c2319;
+	align-items: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#congressimg{
+	display: block;
+	max-width: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 /*.hero{
 	
@@ -147,6 +161,8 @@ svg{
 	width: 347px;
 	width: auto;
 	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .weather{

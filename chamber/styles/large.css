@@ -9,6 +9,7 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   grid-template-areas: "header header header"
+              "banner banner banner"
               "event hero spotlight1"
               "weather hero spotlight2"
               "join news spotlight3"
@@ -31,7 +32,7 @@
 
 
 .spotlight3{ 
-	display: flex;
+	display: block;
 }
 
 .social{
