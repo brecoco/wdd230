@@ -17,6 +17,24 @@
    }
 
 
+
+   #container2{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4rem 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: "header header"
+                "banner banner"
+                "event event"
+                "hero1 spotlight1"
+                "weather pic1"
+                "spotlight2 join1"
+                "news spotlight33"
+                "footer footer";
+    }
+
+
 .himage{grid-area: himage;
 margin-top: 2rem;
 }
@@ -86,20 +104,6 @@ h4{
 }
 
 
-
-#container2{
-	display: grid; 
-	grid-template-columns: 100%;
-	grid-template-rows: .8fr 4rem 1fr 1fr 1fr 2fr;
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-	grid-template-areas: "header header"
-						 "banner2 banner2"
-						 "cityinfo cityinfo"
-						 "location population" 
-						 "economy curiosities"
-						 "footer footer";
- }
 
 
 

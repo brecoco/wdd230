@@ -16,6 +16,7 @@
               "footer footer footer";
   }
 
+ 
 
 .header{
   background-image: linear-gradient( to right, #7c2319,  #000000);
@@ -49,5 +50,35 @@
   width: auto;
   height: auto;
 }
+
+
+#container2{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4rem 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: "header header header"
+              "banner banner banner"
+              "event hero1 spotlight1"
+              "weather pic1 spotlight2"
+              "join1 news spotlight33"
+              "footer footer footer";
+  }
+
+  .pic1{
+    grid-area: pic1;
+    border: 2px solid #b12415;
+    box-shadow: 0 0 10px #7c2319;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
 
 }

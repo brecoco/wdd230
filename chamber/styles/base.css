@@ -301,69 +301,23 @@ font-size: 1rem;}
 
 
 
-
-
-
-
-#container2{
-	display: grid; 
-	grid-template-columns: 100%;
-	grid-template-rows: .8fr 4rem 1fr 1fr 1fr 1fr 1fr 2fr;
-	column-gap: 10px;
-	row-gap: 10px;
-	grid-template-areas: "header"
-						 "banner2"
-						 "cityinfo"
-						 "location" 
-						 "population" 
-						 "economy"
-						 "curiosities"
-						 "footer";
- }
-
-
- .item2{
-	background-color: white;
-    min-height: 50px;
-	max-height: 300px;
-    min-width: 50px;
-    font-weight: bold;
-    color: black;
-    font-size: 20px;
- }
-
-
- #banner2{
-	grid-area: banner2;
-	border: 2px solid black;
-	box-shadow: 0 0 10px #7c2319;
-	background-color: #000000;
-}
-
-#box-banner2{
-	font-size: 1.5rem;
-	color: white;
-	text-align: center;
-	margin-top: .9rem;
-}
-
-
- .cityinfo{
-	grid-area: cityinfo;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;
-	align-items: center;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	
-}
-
-#spflag{
+#spcity{
 	display: block;
 	max-width: 120px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: -5px;
+}
+
+
+
+
+#sppictures{
+	display: block;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
 }
 
 #spmap{
@@ -374,57 +328,36 @@ font-size: 1rem;}
 }
 
 
-.location{
-	grid-area: location;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;
-	align-items: center;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	
-}
 
-.population{
-	grid-area: population;
+.pic1{
+	grid-area: pic1;
 	border: 2px solid #b12415;
 	box-shadow: 0 0 10px #7c2319;
-	align-items: center;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	
-}
-
-.economy{
-	grid-area: economy;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;
-	align-items: center;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	
-}
-
-.curiosities{
-	grid-area: curiosities;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;
-	align-items: center;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	
+	text-align: center;
 }
 
 
 
+.join1{
+	grid-area: join1;
+	border: 2px solid #b12415;
+	box-shadow: 0 0 10px #7c2319;}
 
 
+.hero1{
+	grid-area: hero1;
+	border: 2px solid #b12415;
+	box-shadow: 0 0 10px #7c2319;
+	text-align: center;
+}
 
 
-
+.spotlight33{
+	grid-area: spotlight33;
+	border: 2px solid #b12415;
+	box-shadow: 0 0 10px #7c2319;
+	text-align: center;
+}
 
 
 
