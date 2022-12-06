@@ -14,7 +14,7 @@ body{
 #container{
 	display: grid; 
 	grid-template-columns: 100%;
-	grid-template-rows: .8fr 4rem 1fr 1fr 1fr 1fr 1fr 1fr 2fr ;
+	grid-template-rows: .8fr 4rem 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 	grid-template-areas: "header"
@@ -25,9 +25,19 @@ body{
 						 "weather"
 						 "spotlight1"
 						 "spotlight2"
+						 "footer"
 						 "footer";
  }
 
+ #sppictures{
+	opacity:0.5;
+	transition: 1s ease;
+	}
+	
+#sppictures:hover{
+	opacity:1;
+	transition: 1s ease;
+	}
 
 
 
@@ -250,7 +260,7 @@ font-size: 1rem;}
  .item{
 	background-color: white;
     min-height: 50px;
-	max-height: 200px;
+	max-height: 400px;
     min-width: 50px;
     position: relative;
     font-weight: bold;
