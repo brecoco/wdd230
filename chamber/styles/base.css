@@ -464,9 +464,49 @@ form label.top input:required:valid {
   
   #titleJoinForm{
 	color: rgb(65, 12, 12);
-	  font-weight: bold;
+	font-weight: bold;
 	font-style: oblique;
 	font-weight: 3000;
 	font-size: 30px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: .75rem;
   }
+
+
+  /*---------------thanks page--------------*/
+
+  #containerThanks{
+	display: grid; 
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr .5fr .6fr .3fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-areas: "header"
+						 "title"
+						 "thanksP"
+						 "workingH"
+						 "footer";
+ }
+
+ .thanksP{
+	grid-area: thanksP;
+	border: 2px solid #b12415;
+	box-shadow: 0 0 30px #7c2319;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	padding: .75rem;
+	margin: auto;
+}
+
+.workingH{
+	border: 2px solid #b12415;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	padding: .75rem;
+	margin: auto;
+	background-color: #000000;
+	color: white;
+	margin-bottom: 1rem;
+}
