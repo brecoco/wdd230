@@ -14,7 +14,7 @@
 	</head>
 
 	<body>
-		<div id="container2" >
+		<div id="container3" >
 			<div class="item header">
 				<picture class="subitem himage">
 					<img id="imglogo" src="../chamber/images/logo.webp" alt= "chamber logo">
@@ -49,80 +49,70 @@
 				</div> 
 				<div class="currentdate"><span id="today"></span>
 				</div> 
-			</div>					 
-			<div id="banner">
-				<p id="box-banner">Discover the city of São Paulo</p>
-			</div>
+			</div>	
 
+            <div class="titleform">
+                <h1 id="titleJoinForm">Brecoco <br> Chamber of Commerce Application Form</h1>
+            </div>
 
-
-			<div class="item event">
-				<h2 class="box-titles">About São Paulo</h2>
-				<p class="box-p">São Paulo is a Brazilian municipality, capital of the homonymous 
-                    state and main financial, corporate and commercial center in South America. 
-                    It is the most populous city in Brazil, in the American continent, in the 
-                    Portuguese-speaking world and in the entire southern hemisphere. São Paulo 
-                    is the most influential Brazilian city on the global stage, being, in 2016, 
-                    the 11th most globalized city on the planet. Founded in 1554 by Jesuit priests, the city is world-renowned 
-                    and exerts strong national influence and significant international importance, 
-                    whether from a cultural, economic or political point of view.
-                </p>
-			</div>
-
-
-
-			<div class="item hero1">
-				<h2 class="box-titles">São Paulo's Flag</h2>
-				<picture>
-					<img id="sppictures" src="../chamber/images/placeholder300x400.png" data-src="../chamber/images/spflag.png" alt= "São Paulo Flag">
-				</picture>  
-			</div>
-
-			<div class="item pic1">
-				<h2 class="box-titles">São Paulo's City Map</h2>
-				<picture>
-					<img id="sppictures" src="../chamber/images/placeholder300x400.png" data-src="../chamber/images/citymap.png" alt= "São Paulo Flag">
-				</picture>  
-			</div>
-
-
-
-
-
-			<div class="item weather">
-				<h2 class="box-titles">São Paulo's Picture</h2>
-				<picture>
-					<img id="sppictures" src="../chamber/images/placeholder300x400.png" data-src="../chamber/images/spphoto.jpg" alt= "São Paulo picture">
-				</picture>  
-			</div>
-
-
-
-
-
-
-			<div class="item join1"> 
-				<h2 class="box-titles">São Paulo's Population</h2>
-				<p class="box-p">"The city is the 8th most populous on the planet and its metropolitan 
-                    region, with around 21 million inhabitants, is the 10th largest urban 
-                    agglomeration in the world. The capital of São Paulo also has a cosmopolitan 
-                    character, given that, in 2016, it had native residents from 196 different countries.
-                     Regions around Greater São Paulo are also metropolises, such as Campinas, 
-                     Baixada Santista and Vale do Paraíba. In 2021, 
-                     it was considered by the Boston Consulting Group as one of the 45 best cities 
-                     in the world to live in."
-                </p>
-			</div>
-
-
-
-
-			<div class="item news" >
-				<h2 class="box-titles">São Paulo's Buildings</h2>
-				<picture>
-					<img id="sppictures" src="../chamber/images/placeholder300x400.png" data-src="../chamber/images/sppicture.jpg" alt= "São Paulo Picture">
-				</picture>  
-			</div>
+            <div class="formHTML">
+              
+              <form method="get" action="thanks.html">
+                <fieldset>
+                  <legend>Application Information</legend>
+                  <label class="top">First Name* <input type="text" name="fname" required></label>
+                  <label class="top">Last Name* <input type="text" name="lname" required></label>
+                  <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                  <label class="top">Email* <input type="email" name="email" placeholder= "someone@gmail.com" required></label>
+                  <label class="top">Business Title <input pattern="[A-Za-z\-]{7}" title="Only Alpha characters. Minimum of 7 characters(including hyphen)" type="text" name="bustitle"></label>
+                  <label class="top">Business Name* <input type="text" name="busname" required></label>
+                  <label  class="top" for="textbox">A brief description of your business:</label>
+                  <textarea id="textbox" name="msgbox" maxlength="200" rows="5"></textarea>
+                </fieldset>
+                <fieldset>
+                  <legend>Membership level</legend>
+                  <div>Select Membership Level</div>
+                  <label class="sbs"><input type="radio" name="member" value="npmember"> NP Membership</label>
+                  <label class="sbs"><input type="radio" name="member" value="bronzemember"> Bronze Membership</label>
+                  <label class="sbs"><input type="radio" name="member" value="silvermember"> Silver Membership</label>
+                  <label class="sbs"><input type="radio" name="member" value="goldmember"> Gold Membership</label>
+                </fieldset>
+                <input type="submit" value="Become Member of Commerce" class="submitBtn">
+                <div>
+                  <p id="subtime" style="display: none;"></p>
+                </div>
+              </form>
+            </div>
+            <div class="membershipbenefits">
+                <h3 class="mbmbenefitsTitle"><u>Membership Benefits</u></h3>
+                <h4 class="mbmTitle">NP membership - $Free</h4>
+                <ul>
+                    <li>Benefits of Bronze membership.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                </ul>
+                <h4 class="mbmTitle">Bronze Membership level - $100</h4>
+                <ul>
+                    <li>Benefits of Bronze membership.</li>
+                    <li>Fusce pulvinar erat malesuada, gravida nunc sit amet, mattis lacus.</li>
+                    <li>Suspendisse vitae enim tempus, posuere sem sit amet, condimentum purus.</li>
+                    <li>Cras vel odio suscipit, eleifend dui eget, ullamcorper massa.</li>
+                    </ul>
+                <h4 class="mbmTitle">Silver Membership - $300</h4>
+                    <ul>
+                    <li>Benefits of Silver Membership.</li>
+                    <li>Ut consectetur mi sit amet scelerisque viverra.</li>
+                    <li>Suspendisse ac diam quis massa luctus viverra eu id neque.</li>
+                    <li>Pellentesque eu justo malesuada, fermentum metus eu, semper mi.</li>
+                    </ul>
+                <h4 class="mbmTitle">Gold Membership - $500</h4>
+                    <ul>
+                    <li>Benefits of Gold Membership.</li>
+                    <li>Maecenas id elit facilisis, mattis felis a, gravida mi.</li>
+                    <li>Donec at lacus vehicula, sollicitudin urna eu, congue mauris.</li>
+                    <li>Fusce placerat eros tempus nulla interdum eleifend.</li>
+                    <li>Sed vel neque vel mi sodales mattis.</li>
+                    </ul>
+            </div> 
 
 
 
@@ -131,36 +121,42 @@
 
 
 
-			<div class="item spotlight1">
-				<h2 class="box-titles">Location of São Paulo</h2>
-				<p class="box-p">São Paulo is the capital of the most populous state in Brazil, 
-                    São Paulo, located at latitude 23°33'01'' south and longitude 46°38'02'' west. 
-                    The total area of the municipality is 1,521.11 km², according to the Brazilian 
-                    Institute of Geography and Statistics (IBGE), being the ninth largest in the 
-                    state in terms of territorial extension. Of the entire area of the municipality, 
-                    949,611 km² are urban areas (2015), being the largest urban area in the country.
-				</p>
-			</div>
-			<div class="item spotlight2">
-				<h2 class="box-titles">Location of São Paulo</h2>
-				<picture>
-					<img id="sppictures" src="../chamber/images/placeholder300x400.png" data-src="../chamber/images/locationsp.png" alt= "São Paulo map">
-				</picture> 
-			</div>
 
-			<div class="item spotlight33">
-				<h2 class="box-titles">São Paulo's Finances</h2>
-				<p class="box-p">The metropolis has the 23rd largest GDP in the world, 
-					representing, alone, 11% of the entire Brazilian GDP, 34% of the state's 
-					GDP, as well as 36% of all its production of goods and services, in addition 
-					to being the seat of 63% of multinationals established in Brazil, 
-					being responsible for 28% of all national scientific production in 2005, 
-					and for more than 40% of patents produced in the country. The city is also 
-					home to B3 (Brazil, Bolsa, Balcão), the 5th largest stock exchange in the
-					world by market capitalization (2017 data).
-				</p>
-			</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
 			<div class="item footer">
 				<picture class="fimage">
 					<img src="../chamber/images/logo.webp" alt= "chamber logo">

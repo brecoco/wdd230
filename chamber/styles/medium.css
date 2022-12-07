@@ -110,7 +110,15 @@ h4{
   max-height: 300px;
  }
 
-
+ #sppictures{
+	opacity:0.5;
+	transition: 1s ease;
+	}
+	
+#sppictures:hover{
+	opacity:1;
+	transition: 1s ease;
+	}
 
 
 

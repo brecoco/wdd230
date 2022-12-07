@@ -29,15 +29,6 @@ body{
 						 "footer";
  }
 
- #sppictures{
-	opacity:0.5;
-	transition: 1s ease;
-	}
-	
-#sppictures:hover{
-	opacity:1;
-	transition: 1s ease;
-	}
 
 
 
@@ -370,17 +361,112 @@ font-size: 1rem;}
 }
 
 
-
-
-
-
-
-
-
-
-
-
 #button span:nth-child(1) {display: block;}
 #button span:nth-child(2) {display: none;}
 #button.open span:nth-child(1) {display: none;}
 #button.open span:nth-child(2) {display: block;}
+
+
+
+
+
+/*------------------ FORM ---------------------*/
+
+
+.membershipbenefits {
+	display: none;
+}
+
+#titleJoinForm {
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	color: black;
+	margin-left: 0.5rem;
+	text-align: center;
+}
+
+
+#container3{
+	display: grid; 
+	grid-template-columns: 100%;
+	grid-template-rows: .40fr 0.2fr 2fr .5fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-areas: "header"
+						 "title"
+						 "form"
+						 "footer";
+ }
+
+
+form fieldset {
+	margin: 2rem 0;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: .5rem 2%;
+}
+
+form legend {
+	color: #7c2319;
+	margin: 0 1rem;
+	padding: 0 .5rem;
+	font-weight: bold;
+}
+
+form label.top, form div{
+	display: block;
+	padding-top: 1rem;
+	color: #7c2319;
+	font-weight: bold;
+}
+
+
+form label.top input, form textarea{
+	display: block;
+	font-size: 1rem;
+	border: solid 1px black;
+	border-radius: 4px;
+	padding: .50rem;
+	width: 100%;
+	background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+	display: block;
+	padding: .75% 0;
+}
+
+form input.submitBtn {
+	border: none;
+	background-image: linear-gradient( to right, #7c2319,  #000000);
+	color: white;
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	margin: 0 0 2rem 2%;
+	width: 96%;
+	max-width: 20rem;
+}
+
+form label.top input:required{
+	border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+	border-left: green solid 6px;
+}
+
+.titleform{
+	grid-area: title;
+	  border: solid 1px black;
+	  border-radius: 4px;
+	background-color: rgb(194, 70, 70);
+  }
+  
+  #titleJoinForm{
+	color: rgb(65, 12, 12);
+	  font-weight: bold;
+	font-style: oblique;
+	font-weight: 3000;
+	font-size: 30px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
