@@ -1,0 +1,23 @@
+@media only screen and (min-width:620px) {
+
+    main {
+        max-width: 6500px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+
+    .portrait:hover{
+        transform: scale(1.1);
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+    
+    } 
