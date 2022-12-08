@@ -39,7 +39,7 @@ fetch(requestURL)
     h2.setAttribute('id', 'h2Directory')
     cAddress.setAttribute('id', 'h3Directory')
     cPhone.setAttribute('id', 'h3Directory')
-    cDescription.setAttribute('id', 'h4Directory')
+    cDescription.setAttribute('id', 'h4Directory') 
     url.textContent = `${company.name}`;
     url.setAttribute('href', company.urlC);
     url.setAttribute('class', 'website')
