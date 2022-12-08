@@ -521,29 +521,7 @@ form label.top input:required:valid {
 
 
 
-/*------------------ FORM ---------------------*/
-
-.containerDirectory{
-	display: grid; 
-	grid-template-columns: 100%;
-	grid-template-rows: 1fr .5fr .6fr .3fr 1fr;
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-	grid-template-areas: "header"
-						 "directoryTitleC"
-						 "company1"
-						 "company2"
-						 "company3"
-						 "company4"
-						 "company5"
-						 "company6"
-						 "company7"
-						 "company8"
-						 "company9"
-						 "footer";
-}
-
-
+/*------------------ DIRECTORY ---------------------*/
 
 .directoryTitleC{
 	grid-area: directoryTitleC;
@@ -561,3 +539,54 @@ form label.top input:required:valid {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	padding: .75rem;
   }
+
+
+  .directoryClass{
+    max-width: 100%;
+    margin: .3em;
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+    margin: .5rem;
+    border-radius: 2rem;
+	border: 2px solid red;
+}
+
+.portrait {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 1rem;
+    transition: transform .2s ease; /* Animation */
+}
+
+
+
+#h2Directory,#h3Directory,#h4Directory{
+    font-family: sans-serif ;
+}
+
+#titleDirectory{
+    font-size: 2rem;
+    font-weight: bold;
+	text-align: center;
+}
+
+#h2Directory{
+    font-size: 1.5rem;
+    font-weight: bold;
+	color: #a02d20;
+}
+
+#h3Directory{
+    font-size: 1rem;
+	color: #000000;
+}
+
+#h4Directory{
+    font-size: 1rem;
+	color: #000000;
+	font-style: italic;
+}
+
+

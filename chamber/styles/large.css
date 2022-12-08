@@ -1,4 +1,4 @@
-@media only screen and (min-width: 45rem) {
+@media only screen and (min-width: 950px) {
   
 
 
@@ -167,6 +167,18 @@
   }
 
 
+
+
+
+
+
+/*------------------ DIRECTORY ---------------------*/
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
 
 
 
