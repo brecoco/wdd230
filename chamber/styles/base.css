@@ -562,7 +562,7 @@ form label.top input:required:valid {
 
 
 
-#h2Directory,#h3Directory,#h4Directory{
+.website,#h3Directory,#h4Directory{
     font-family: sans-serif ;
 }
 
@@ -572,7 +572,12 @@ form label.top input:required:valid {
 	text-align: center;
 }
 
-#h2Directory{
+.website:hover{
+	color: rgb(43, 12, 128);
+	font-weight: bold;
+}
+
+.website{
     font-size: 1.5rem;
     font-weight: bold;
 	color: #a02d20;

@@ -25,7 +25,7 @@ fetch(requestURL)
     let url = document.createElement('a');
   
     // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = `${company.name}`;
+    
     cAddress.textContent =`${company.address}`;
     cPhone.textContent = `Phone: ${company.telephone}`;
     cDescription.textContent = `${company.description}`;
