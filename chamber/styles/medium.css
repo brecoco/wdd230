@@ -81,7 +81,7 @@ h4{
 
 
 .footer{
-	grid-template-columns: 1fr 2fr 2fr;
+	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-rows: 1fr .2fr;
 	grid-column-gap: 10px;
 	grid-template-areas: "fimage ftitle contactinfo"
@@ -92,10 +92,12 @@ h4{
 
 .contactinfo{
   margin-top: 2rem;
+  margin: auto;
 }
 
 .ftitle{
   margin-left: 2rem;
+  justify-content: center;
 }
 
 .fimage{
@@ -119,8 +121,6 @@ h4{
 	opacity:1;
 	transition: 1s ease;
 	}
-
-
 
 
 

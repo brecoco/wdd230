@@ -97,6 +97,7 @@ a{
 	margin-bottom: 1rem;
 }
 
+
 .social{grid-area: social;
 	width: 20%;
 }
@@ -237,7 +238,10 @@ svg{
 }
 
 .ftitle{grid-area: ftitle;
-font-size: 1rem;}
+font-size: 1rem;
+justify-content: center;
+
+}
 
 .contactinfo{ grid-area: contactinfo;}
 
@@ -510,3 +514,50 @@ form label.top input:required:valid {
 	color: white;
 	margin-bottom: 1rem;
 }
+
+
+
+
+
+
+
+/*------------------ FORM ---------------------*/
+
+.containerDirectory{
+	display: grid; 
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr .5fr .6fr .3fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-areas: "header"
+						 "directoryTitleC"
+						 "company1"
+						 "company2"
+						 "company3"
+						 "company4"
+						 "company5"
+						 "company6"
+						 "company7"
+						 "company8"
+						 "company9"
+						 "footer";
+}
+
+
+
+.directoryTitleC{
+	grid-area: directoryTitleC;
+	border: solid 1px black;
+	border-radius: 4px;
+	background-color: rgb(194, 70, 70);
+  }
+  
+  #titleDirectory{
+	color: rgb(65, 12, 12);
+	font-weight: bold;
+	font-style: oblique;
+	font-weight: 3000;
+	font-size: 30px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: .75rem;
+  }

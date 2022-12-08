@@ -1,0 +1,76 @@
+{
+  "companies": [
+    {
+      "name": "ENEL DISTRIBUICAO SAO PAULO",
+      "address": "Avenida das Nacoes Unidas, 14401 SAO PAULO, SP CEP 04.794-000",
+      "telephone": "0800 72 72 120",
+      "description": "New era. New energy",
+      "order": 1,
+      "imageurl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Enel_Group_logo.svg"
+    },
+    {
+      "name": "JBS S.A.",
+      "address": "Avenida Marginal Direita do Tiete, 500 SAO PAULO, SP CEP 05.118-100",
+      "telephone": "0800 01 15 057",
+      "description": "Feeding the world the best",
+      "order": 2,
+      "imageurl": "https://jbs.com.br/wp-content/uploads/2019/06/logo-jbs.jpeg"
+    },
+    {
+      "name": "Famiglia Mancini Trattoria",
+      "address": "Rua Avanhandava, 81, Bela Vista - Centro Histórico de São Paulo, São Paulo - SP CEP 01050-000",
+      "telephone": "(+55 11)3256-4320",
+      "description": "The south of Italy in this kitchen",
+      "order": 3,
+      "imageurl": "http://www.famigliamancini.com.br/wp-content/uploads/2020/11/FM_V_L.png"
+    },
+    {
+      "name": "Padaria São Domingos",
+      "address": "R. São Domingos, 330 - Bela Vista, São Paulo - SP CEP 01326-000",
+      "telephone": "(+55 11)31047600",
+      "description": "Italian tradition, centuries-old innovation.",
+      "order": 4,
+      "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUkKU7S4FpV10j4nqcfSN3Ejl9DYwhqmgooQ&usqp=CAU"
+    },
+    {
+      "name": "MercadoCar",
+      "address": "Av. Marquês de São Vicente, 1697 - Barra Funda, São Paulo - SP CEP 01139-003",
+      "telephone": "(+55 11) 2206-5000",
+      "description": "The largest auto parts mall in Latin America",
+      "order": 5,
+      "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStUs8K7Ee8RCHSfd3BmVvO0jdcOemTO746f5J4zyxT91OmC98l7JsvU4eNm-k10VuuWJw&usqp=CAU"
+    },
+    {
+      "name": "Exército da Salvação",
+      "address": "Rua Passagem da Servidão Toyota 1115, São Bernardo do Campo - SP CEP 09891-005",
+      "telephone": "(+55 11)4003-2299",
+      "description": "An army of love",
+      "order": 6,
+      "imageurl": "https://i.ytimg.com/vi/8pI6tejNaiI/hqdefault.jpg"
+    },
+    {
+      "name": "BlueFit",
+      "address": "R. Santo Antônio, 644 - Bela Vista, São Paulo - SP CEP 01314-000",
+      "telephone": "No Phone",
+      "description": "Your Gym",
+      "order": 7,
+      "imageurl": "https://bluefit.com.br/themes/bluefit-20/assets/images/shareimg.jpg"
+    },
+    {
+      "name": "Pão de Açucar Supermarket",
+      "address": "Av. Brigadeiro Luís Antônio, 3126 - Jardins, São Paulo - SP CEP 01402-901",
+      "telephone": "0800 773 2732",
+      "description": "A place of happy people",
+      "order": 8,
+      "imageurl": "https://upload.wikimedia.org/wikipedia/pt/d/dd/Logomarca_do_P%C3%A3o_de_A%C3%A7%C3%BAcar_%28supermercado%29.png"
+    },
+    {
+      "name": "J.R. Passalacqua School",
+      "address": "Rua João Passalaqua, 207 - Bela Vista, São Paulo - SP CEP 01326-020",
+      "telephone": "(+55 11) 3242-5879",
+      "description": "Our mission is to educate for life",
+      "order": 9,
+      "imageurl": "https://play-lh.googleusercontent.com/tHj2GbFgjVSZz8Y_GrZX3-UARnyI7g1inqamgdmKMYevHa_TrtkTKeCMvWag4rotCA"
+    }
+  ]
+}
