@@ -14,7 +14,7 @@ body{
 #container{
 	display: grid; 
 	grid-template-columns: 100%;
-	grid-template-rows: .4fr 4rem 1fr .8fr .9fr .6fr .6fr .6fr .9fr;
+	grid-template-rows: .4fr 4rem 1fr .8fr .9fr .6fr .6fr .6fr .4fr;
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 	grid-template-areas: "header"
@@ -178,10 +178,11 @@ svg{
 	color: rgb(255, 255, 255);
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: .2fr 1fr;
+	grid-template-rows: .2fr 1fr .2fr;
 	grid-column-gap: 2px;
 	grid-template-areas: "weathertitle weathertitle"
 						 "weather-icon current-temp"
+						 "linkW linkW"
 }
 
 #weathertitle{
@@ -221,7 +222,11 @@ svg{
 	margin-top: 2rem;
 }
 
-
+#linkW{
+	grid-area: linkW;
+	text-align: center;
+	justify-content: center;
+}
 
 
 .hilow{
