@@ -5,19 +5,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body{
-  max-width: 500px;
+	max-width: 40%;
   margin: 10%;
   min-width: 350px;
-  
-}
+  margin: auto;
+  margin-top: 3rem;
 
-.currentdate{grid-area: currentdate;
-	background-color:#7c2319;
-	margin-left: 1rem;
-	margin-right: 1rem;
-	margin-top: .5rem;
-	margin-bottom: .5rem;
-	color: white;
+  
 }
 
 #current-temp,#currently{
