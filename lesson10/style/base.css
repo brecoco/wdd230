@@ -1,0 +1,121 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body{
+  max-width: 95%;
+  margin: 10%;
+  min-width: 350px;
+  
+}
+
+.currentdate{grid-area: currentdate;
+	background-color:#7c2319;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	color: white;
+}
+
+#current-temp,#currently{
+	color: rgb(172, 9, 9);
+
+}
+
+.iconBox{
+	border: solid 1px black;
+	border-radius: 4px;
+	width: 110px;
+	margin: auto;
+	
+}
+
+
+.footer{
+	background-image: linear-gradient( to right, #7c2319,  #000000);
+	grid-area: footer;
+	text-align: center;
+	border: 2px solid white;
+}
+
+
+h3{
+	font-size: 0.7rem;
+	color: white;
+	margin-left: 0.5rem;
+}
+
+h4{
+	font-size: 0.7rem;
+	color: white;
+	margin-left: 0.5rem;
+}
+
+
+.fimage{grid-area: fimage;
+	margin-top: 1rem;
+}
+
+.ftitle{grid-area: ftitle;
+font-size: 1rem;
+justify-content: center;
+
+}
+
+.contactinfo{ grid-area: contactinfo;}
+
+.developerinfo{ grid-area: developerinfo;
+	font-size: 0.7rem;
+	color: white;
+	margin-left: 0.5rem;
+}
+
+
+#titleW {
+	margin-top: 1rem;
+	color: black;
+	margin-left: 0.5rem;
+	text-align: center;
+	font-weight: bold;
+	font-style: oblique;
+	font-size: 30px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: .75rem;
+}
+
+.titleform{
+	grid-area: title;
+	  border: solid 1px black;
+	  border-radius: 4px;
+	background-color: rgb(194, 70, 70);
+  }
+  
+
+
+ .tempInfo{
+	grid-area: thanksP;
+	border: 2px solid #b12415;
+	box-shadow: 0 0 30px #7c2319;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	padding: .75rem;
+	margin: auto;
+}
+
+.workingH{
+	border: 2px solid #b12415;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	padding: .75rem;
+	margin: auto;
+	background-color: #000000;
+	color: white;
+	margin-bottom: 1rem;
+}
+
+
