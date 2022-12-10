@@ -3,7 +3,7 @@
   #container{
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4rem 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .6fr 4rem 1fr 1fr 1fr 1fr 1fr .6fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-areas:"header header"
@@ -16,7 +16,13 @@
                         "footer footer";
    }
 
-
+   #imgwdd230{
+    width: 100% ;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+   }
 
    #container2{
     display: grid; 
@@ -39,10 +45,53 @@
 margin-top: 2rem;
 }
 
-/*.hero{
-	background-image: url("../images/wdd230-org-400.jpg");
-	background-size: cover;
-}*/
+
+
+#joinTxt{
+	color: #000000;
+	text-align: center;
+  margin-top: 4rem;
+  margin-right:auto;
+  margin-left: auto;
+  animation: animate 1s linear infinite;
+  font-size: 2rem;
+}
+
+@keyframes animate {
+  0% {
+      color: red;
+  }
+
+  50% {
+      color: #000000;
+  }
+
+  100% {
+      color: red;
+  }
+}
+
+.joinBtn{
+	display: block;
+	border: none;
+	background-image: linear-gradient( to right, #7c2319,  #000000);
+	color: white;
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	width: 96%;
+	max-width: 12rem;
+	max-height: 3rem;
+	margin: auto;
+  font-size: 1.3rem;
+
+}
+
+.join{
+  display: block;
+
+}
+
+
 
 
 .title{  
@@ -64,7 +113,7 @@ margin-left: 0.5rem;
 
 
 h3{
-	font-size: 1rem;
+	font-size: 1.3rem;
 }
 
 h4{
@@ -74,10 +123,6 @@ h4{
 }
 
 
-   
-.join{
-	display: flex;
-}
 
 
 .footer{
@@ -98,6 +143,7 @@ h4{
 .ftitle{
   margin-left: 2rem;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .fimage{

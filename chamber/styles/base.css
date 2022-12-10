@@ -14,7 +14,7 @@ body{
 #container{
 	display: grid; 
 	grid-template-columns: 100%;
-	grid-template-rows: .8fr 4rem 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: .4fr 4rem 1fr .8fr .9fr .6fr .6fr .6fr .9fr;
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 	grid-template-areas: "header"
@@ -26,7 +26,7 @@ body{
 						 "spotlight1"
 						 "spotlight2"
 						 "footer"
-						 "footer";
+						 ;
  }
 
 
@@ -57,7 +57,7 @@ margin-left: 1rem;}
 .title{grid-area: title;}
 
 h1{
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin-top: 1rem;
 	color: white;
 	margin-left: 0.5rem;
@@ -70,7 +70,7 @@ h2{
 }
 
 h3{
-	font-size: 0.7rem;
+	font-size: 1rem;
 	color: white;
 	margin-left: 0.5rem;
 }
@@ -146,27 +146,24 @@ svg{
 
 #congressimg{
 	display: block;
-	max-width: 40px;
+	max-width:100px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 
-/*.hero{
-	
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;
-	background-image: url("../images/wdd230-org-200.jpg");
-	background-size: cover;
-}*/
 
-#imgwdd230{grid-area: hero;
-	max-width: 100%;
-	width: 347px;
-	width: auto;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
+.hero{
+	grid-area: hero;
+  }
+
+#imgwdd230{
+	grid-area: hero;
+    width: 100% ;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
 }
 
 .weather{
@@ -174,23 +171,64 @@ svg{
 	border: 2px solid #b12415;
 	box-shadow: 0 0 10px #7c2319;
 	text-align: center;
+	background-image: linear-gradient( to bottom, #8adbe9,  #4561af);
+	/*background-image: url("../images/weather.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	color: rgb(255, 255, 255);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: .2fr 1fr;
+	grid-column-gap: 2px;
+	grid-template-areas: "weathertitle weathertitle"
+						 "weather-icon current-temp"
+}
 
-}
-#weathertitle, #windspeedtitle, #windchilltitle{
+#weathertitle{
+	grid-area: weathertitle;
 	font-size: 1.5rem;
-	color: black;
-	margin: auto;
 }
+
+#current-temp{
+	grid-area: current-temp;
+	font-size: 2rem;
+	margin-bottom: 10rem;
+	border-bottom: white;
+}
+
+#currently{
+	grid-area: current-temp;
+	font-size: 1.2rem;
+}
+
+
+#windSpeed{
+	grid-area: current-temp;
+	font-size: 1rem;
+}
+
+#windchill{
+	grid-area: current-temp;
+	font-size: 1rem;
+}
+
+#weather-icon{
+	grid-area: weather-icon;
+	width: 100px;
+}
+
+.tempInfo{
+	margin-top: 2rem;
+}
+
+
+
 
 .hilow{
 	font-size: 1rem;
 	margin: auto;
 }
-#temperature, #windspeed, #windchill{
-	font-size: 1rem;
-	color: red;
-	margin: auto;
-}
+
 
 .join{
 	grid-area: join; display: none;
@@ -286,14 +324,16 @@ justify-content: center;
 
 
 .box-titles{
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: black;
 	text-align: center;
 
 }
 
+
+
 .box-p{
-	font-size: .6rem;
+	font-size: .8rem;
 	color: black;
 	text-align: center;
 	margin-bottom: 5rem;
@@ -303,6 +343,14 @@ justify-content: center;
 
 
 
+.boxNews{
+	font-size: 1rem;
+	color: black;
+	text-align: center;
+	margin-left: .5rem;
+	margin-right: .5rem;
+	margin-top: 2rem;
+}
 
 
 

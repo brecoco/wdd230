@@ -10,11 +10,11 @@ const weekDayNames = [
 
 const todayDate = new Date();
 const weekDayName = weekDayNames[todayDate.getDay()];
-// console.log(dayName);
+console.log(dayName);
 
 const bannerDiv = document.getElementById('banner');
 const bannerTex = document.getElementById('box-banner');
-//const bannerCss = document.getElementById('container')
+const bannerCss = document.getElementById('container')
   
 function bannerDisplay(date) {
   if (date == "Monday" || date == "Tuesday") {
@@ -24,8 +24,8 @@ function bannerDisplay(date) {
   } else {
     bannerDiv.style.display = "none";
     bannerTex.style.display = "none";
-    //bannerCss.style.gridRow = 'grid-template-rows: 1fr 1% 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;'
-    //bannerCss.style.color = 'black'
+    bannerCss.style.gridRow = 'grid-template-rows: 1fr 1% 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;'
+    bannerCss.style.color = 'black'
   }
 }
 

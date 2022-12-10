@@ -67,26 +67,34 @@
 			</div>
 			<div class="item hero">
 					<picture>
-						<source srcset="../chamber/images/wdd230-org-400.jpg" media="(min-width: 30rem) and (max-width: 44.99rem)">
+						<source srcset="../chamber/images/wdd230-org-400.jpg" media="(min-width: 629.99px) and (max-width: 949.99px)">
 						<source srcset="../chamber/images/wdd230-org-600.jpg" media="(min-width: 45rem)">
 					<img id="imgwdd230" src="../chamber/images/wdd230-org-200.jpg" alt="assignment picture">
 					</picture>
 			</div>
-			<div class="item weather">
-				<h1 id="weathertitle">Weather</h1>
-				<p id="temperature">
-					<span>Temperature: </span><span>48</span> °F
-				</p>
-				<p class="hilow">H: 55&#176; &#160;  L: 41&#176;</p>
-				  <p id="windspeedtitle">Wind Speed: </p>
-				  <p id="windspeed"><span>15 </span>mph</p>
-				  <p id="windchilltitle">Windchill: </p>
-				  <p id="windchill"></p>
+
+
+
+			<div class="weather">
+				<h1 id="weathertitle">Weather</h1> 
+				<div class="iconBox">
+					<img src="" alt="" id="weather-icon" />
+					<figcaption></figcaption> 
+				</div>
+				<div class="tempInfo">
+					<span id="current-temp"></span>
+					<span id="currently"></span>
+					<br><br> Wind Speed: <span id="windSpeed"></span>
+					<br>Wind Chill: <span id="windchill"></span>
+				</div>
 			</div>
-			<div class="item join" >join</div>
+			<div class="item join" >
+				<h3 id="joinTxt">Join us and receive all the benefits of been a member!</h3>
+                <a href="../chamber/join.html"><button class="joinBtn">Join us!</button></a>
+			</div>
 			<div class="item news" >
 				<h2 class="box-titles">NEWS RELEASE</h2>
-				<p class="box-p">"Lorem ipsum dolor sit amet, 
+				<p class="boxNews">"Lorem ipsum dolor sit amet, 
 					consectetur adipiscing elit, sed do eiusmod tempor 
 					incididunt ut labore et dolore magna aliqua. 
 					Ut enim ad minim veniam, quis nostrud exercitation 
@@ -141,7 +149,7 @@
 					<h2>+(55)11 9999-9999 </h2>
 				  </div>
 				  <div class="developerinfo">
-					&copy; <span id="year"></span> | Thiago Silva | Brazil | <a href="http://www.byui.edu/online/" target="_blank">BYU-I Online Learning</a> | Last  Updated: <span id="updated">
+					&copy; <span id="year"></span> | Thiago Silva | Brazil | <a href="http://www.byui.edu/online/" target="_blank">BYU-I Online Learning</a> | Last  Updated: <br> <span id="updated">
 					</span>  
 				  </div>
 			</div>
@@ -149,6 +157,6 @@
 	<script src="../chamber/scripts/date.js"></script> 
 	<script src="../chamber/scripts/menu_open.js"></script> 
 	<script src="../chamber/scripts/banner.js"></script>
-	<script src="../chamber/scripts/windchill.js"></script>
+	<script src="../chamber/scripts/weatherapi.js" defer></script>
 	</body>
 </html>
