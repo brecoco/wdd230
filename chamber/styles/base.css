@@ -174,7 +174,6 @@ svg{
     width: 100% ;
     height: 100%;
     margin: auto;
-    padding: auto;
     justify-content: center;
 	margin-top: 8rem;
 }
@@ -610,7 +609,6 @@ justify-content: center;
 	color: rgb(65, 12, 12);
 	font-weight: bold;
 	font-style: oblique;
-	font-weight: 3000;
 	font-size: 30px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	padding: .75rem;
@@ -674,7 +672,6 @@ justify-content: center;
 	color: rgb(65, 12, 12);
 	font-weight: bold;
 	font-style: oblique;
-	font-weight: 3000;
 	font-size: 30px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	padding: .75rem;
@@ -851,7 +848,6 @@ html{
 	color: rgb(65, 12, 12);
 	font-weight: bold;
 	font-style: oblique;
-	font-weight: 3000;
 	font-size: 40px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	padding: .75rem;
