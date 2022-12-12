@@ -231,7 +231,7 @@ svg{
 }
 
 .tempInfo{
-	margin-top: 2rem;
+	margin-top: 3rem;
 }
 
 #linkW{
@@ -813,7 +813,7 @@ html{
 	margin-left: 0.5rem;
   }
   
-  #contactusTitle, #pointsTitle{
+  .contactusTitle, #pointsTitle{
 	font-size: 1.8rem;
 	color: red;
 	font-weight: bold;

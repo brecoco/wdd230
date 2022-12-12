@@ -285,7 +285,7 @@ form label.sbs{
   border-radius: 8px;
   margin:2.6rem 0 0 1rem ;
   width: 96%;
-  height: 90%;
+  height: 93%;
   padding: .5rem .5rem;
   font-size: 1.3rem;
   background-color: rgb(238, 238, 238);
@@ -299,7 +299,7 @@ form label.sbs{
   margin-left: 0.5rem;
 }
 
-#contactusTitle, #pointsTitle{
+.contactusTitle, #pointsTitle{
   font-size: 2.5rem;
   color: red;
   font-weight: bold;
@@ -315,7 +315,7 @@ form label.sbs{
   border-radius: 8px;
   margin:2.6rem 0 0 1rem ;
   width: 96%;
-  height: 90%;
+  height: 93%;
   padding: .5rem .5rem;
   font-size: 1.3rem;
   background-color: rgb(238, 238, 238);
