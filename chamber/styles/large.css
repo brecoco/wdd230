@@ -64,7 +64,7 @@
     grid-template-areas: "header header header"
                 "banner banner banner"
                 "event hero1 spotlight1"
-                "weather pic1 spotlight2"
+                "weather1 pic1 spotlight2"
                 "join1 news spotlight33"
                 "footer footer footer";
     }

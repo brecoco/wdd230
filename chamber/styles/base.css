@@ -418,6 +418,12 @@ justify-content: center;
 }
 
 
+.weather1{
+	grid-area: weather1;
+	border: 2px solid #b12415;
+	box-shadow: 0 0 10px #7c2319;}
+
+
 #button span:nth-child(1) {display: block;}
 #button span:nth-child(2) {display: none;}
 #button.open span:nth-child(1) {display: none;}
