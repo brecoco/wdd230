@@ -1,8 +1,8 @@
 
 
 
-const btngrid = document.querySelector("#grid");
-const btnlist = document.querySelector("#list");
+const btngrid = document.querySelector("#gridbtn");
+const btnlist = document.querySelector("#listbtn");
 const typeDisplay = document.querySelector('.cards');
 
 

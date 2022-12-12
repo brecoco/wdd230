@@ -690,7 +690,6 @@ justify-content: center;
     margin: .5rem;
     border-radius: 2rem;
 	border: 2px solid red;
-	
     align-items: center;
 }
 
@@ -737,16 +736,39 @@ justify-content: center;
 
 
 
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
 .list section {
 	flex-direction: row;
 }
+
 
   .list section img {
 	display: none;
     
   }
 
+  .viewType{
+	display: flex;
+	flex-direction: row;
 
+  }
+
+#gridbtn, #listbtn{
+	display: block;
+	border: none;
+	background-image: linear-gradient( to right, #7c2319,  #000000);
+	color: white;
+	border-radius: 1rem;
+	width: 10%;
+	max-width: 12rem;
+	max-height: 2.5rem;
+	margin: auto;
+	font-size: 1rem;
+}
 
 
 
