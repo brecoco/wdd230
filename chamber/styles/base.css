@@ -14,7 +14,7 @@ body{
 #container{
 	display: grid; 
 	grid-template-columns: 100%;
-	grid-template-rows: .4fr 4rem 1fr .8fr .9fr .6fr .6fr .6fr .8fr;
+	grid-template-rows: .3fr .1fr .5fr .6fr .5fr .4fr 2fr 1fr;
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 	grid-template-areas: "header"
@@ -23,8 +23,7 @@ body{
 						 "news" 
 						 "event"	
 						 "weather"
-						 "spotlight1"
-						 "spotlight2"
+						 "mbmCompanies"
 						 "footer"
 						 ;
  }
@@ -49,6 +48,19 @@ body{
 .himage{grid-area: himage;
 	margin-top: 1rem;
 }
+
+  
+  .mbmCompanies{
+    grid-area: mbmCompanies;
+    border: 2px solid  #7c2319;
+  }
+
+  
+  .mbmCompanybox{
+    justify-content: center;
+    text-align: center;
+  }
+
 
 
 #imglogo{width: 80px;
@@ -164,6 +176,7 @@ svg{
     margin: auto;
     padding: auto;
     justify-content: center;
+	margin-top: 8rem;
 }
 
 .weather{
@@ -424,6 +437,74 @@ justify-content: center;
 	box-shadow: 0 0 10px #7c2319;}
 
 
+
+
+
+.joinBtn{
+	display: block;
+	border: none;
+	background-image: linear-gradient( to right, #7c2319,  #000000);
+	color: white;
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	width: 96%;
+	max-width: 12rem;
+	max-height: 3rem;
+	margin: auto;
+	font-size: 1.3rem;
+
+}
+
+
+.joinBtnP{
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+	border: 2px solid #000000;
+	margin:40px 0 0 -90px;   
+	background-image: linear-gradient( to right, #7c2319,  #000000);
+	color: white;
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	width: 96%;
+	max-width: 12rem;
+	max-height: 3rem;
+    font-size: 1.1rem;
+
+}
+
+
+
+#joinTxt{
+	color: #000000;
+	text-align: center;
+  margin-top: 4rem;
+  margin-right:auto;
+  margin-left: auto;
+  animation: animate 1s linear infinite;
+  font-size: 2rem;
+}
+
+#welcomePictxt{
+    position:absolute;
+    z-index:1;
+    font-size: 1.8rem;
+	text-align: center;
+	color: #b12415;
+	margin-bottom: 5rem;
+	margin-top: -1px;
+	font-weight: bold;
+
+
+}
+
+
+
+	
+	
+
+
 #button span:nth-child(1) {display: block;}
 #button span:nth-child(2) {display: none;}
 #button.open span:nth-child(1) {display: none;}
@@ -613,8 +694,8 @@ justify-content: center;
 }
 
 .portrait {
-    height: 250px;
-    width: 250px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 1rem;
     transition: transform .2s ease; /* Animation */
 }

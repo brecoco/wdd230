@@ -10,13 +10,13 @@
     grid-row-gap: 10px;
     grid-template-areas: "header header header"
                 "banner banner banner"
-                "event hero spotlight1"
-                "weather hero spotlight2"
-                "join news spotlight3"
+                "event hero mbmCompanies"
+                "weather hero mbmCompanies"
+                "join news mbmCompanies"
                 "footer footer footer";
     }
 
-  
+
 
   .header{
     background-image: linear-gradient( to right, #7c2319,  #000000);
@@ -32,10 +32,17 @@
   }
 
 
-
-  .spotlight3{ 
-    display: block;
+  .himage{
+    margin-top: 3rem;
   }
+
+
+  h1{
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+
 
   .social{
     margin-top: 2rem;
@@ -50,7 +57,7 @@
     grid-area: hero;
     display:flexbox;
     max-width: 100%;
-    height: 143%;
+    height: 170%;
     
   }
 

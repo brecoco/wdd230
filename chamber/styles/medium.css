@@ -1,18 +1,18 @@
-@media only screen and (min-width: 630PX) {
+@media only screen and (min-width: 630px) and (max-width:949.99px) {
   
   #container{
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .6fr 4rem 1fr 1fr 1fr 1fr 1fr .6fr;
+    grid-template-rows: .6fr 4rem 1.2fr 1fr 1fr 1fr 1fr .6fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-areas:"header header"
                         "banner banner"
                         "hero hero"
-                        "news news"
-                        "spotlight1 spotlight2"
-                        "join join" 
-                        "event weather"
+                        "news mbmCompanies"
+                        "join mbmCompanies"
+                        "weather mbmCompanies" 
+                        "event mbmCompanies"
                         "footer footer";
    }
 
@@ -22,6 +22,7 @@
     margin: auto;
     padding: auto;
     justify-content: center;
+    margin-top: 4rem;
    }
 
    #container2{
@@ -47,15 +48,6 @@ margin-top: 2rem;
 
 
 
-#joinTxt{
-	color: #000000;
-	text-align: center;
-  margin-top: 4rem;
-  margin-right:auto;
-  margin-left: auto;
-  animation: animate 1s linear infinite;
-  font-size: 2rem;
-}
 
 @keyframes animate {
   0% {
@@ -71,20 +63,6 @@ margin-top: 2rem;
   }
 }
 
-.joinBtn{
-	display: block;
-	border: none;
-	background-image: linear-gradient( to right, #7c2319,  #000000);
-	color: white;
-	border-radius: 1rem;
-	padding: .75rem 1.5rem;
-	width: 96%;
-	max-width: 12rem;
-	max-height: 3rem;
-	margin: auto;
-  font-size: 1.3rem;
-
-}
 
 .join{
   display: block;
