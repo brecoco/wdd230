@@ -622,7 +622,7 @@ justify-content: center;
   #containerThanks{
 	display: grid; 
 	grid-template-columns: 100%;
-	grid-template-rows: 1fr .5fr .6fr .3fr 1fr;
+	grid-template-rows: .4fr .5fr .6fr .3fr 1fr;
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 	grid-template-areas: "header"
@@ -687,10 +687,11 @@ justify-content: center;
     padding: 1em;
     background-color: rgb(255, 255, 255);
     text-align: center;
-    justify-content: center;
     margin: .5rem;
     border-radius: 2rem;
 	border: 2px solid red;
+	
+    align-items: center;
 }
 
 .portrait {
@@ -736,6 +737,15 @@ justify-content: center;
 
 
 
+.list section {
+	flex-direction: row;
+}
+
+  .list section img {
+	display: none;
+    
+  }
+
 
 
 
@@ -749,7 +759,7 @@ html{
 #containerContactus{
 	display: grid; 
 	grid-template-columns: 1fr;
-	grid-template-rows: .3fr 0.2fr 1.4fr 1.4fr 1fr .6fr;
+	grid-template-rows: .3fr 0.2fr 1.4fr 1.4fr 1fr .8fr;
 	grid-column-gap: 5px;
 	grid-row-gap: 10px;
 	grid-template-areas: "header"

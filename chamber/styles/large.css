@@ -53,6 +53,34 @@
     max-height: 10rem;
   }
 
+  
+.footer{
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr .2fr;
+	grid-column-gap: 10px;
+	grid-template-areas: "fimage ftitle contactinfo"
+                       "developerinfo developerinfo developerinfo";
+
+}
+
+
+.contactinfo{
+  margin-top: 2rem;
+  margin: auto;
+}
+
+.ftitle{
+  margin-left: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.fimage{
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+
   #imgwdd230{
     grid-area: hero;
     display:flexbox;
@@ -65,7 +93,7 @@
   #container2{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .4fr 4rem 1fr 1fr 1fr 1fr;
+    grid-template-rows: .6fr 4rem 1fr 1fr 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-areas: "header header header"
@@ -200,7 +228,22 @@ h4{
 }
 
 
+.list {
+	display: flex;
+	flex-direction: column;
+}
 
+.list section {
+	flex-direction: row;
+}
+
+
+
+  .list section img {
+    width: 10%;
+    height: 10%;
+    
+  }
 
 
 
@@ -279,6 +322,30 @@ form label.sbs{
   background-color: rgb(238, 238, 238);
   justify-content: center;
 }
+
+
+
+
+
+
+
+  /*---------------thanks page--------------*/
+
+  #containerThanks{
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: .8fr .5fr .6fr .3fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: "header"
+               "title"
+               "thanksP"
+               "workingH"
+               "footer";
+   }
+  
+
+
 
 
 

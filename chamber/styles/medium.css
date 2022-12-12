@@ -3,7 +3,7 @@
   #container{
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .6fr 4rem 1.2fr 1fr 1fr 1fr 1fr .6fr;
+    grid-template-rows: .6fr 4rem 1.2fr 1fr 1fr 1fr 1fr .8fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-areas:"header header"
@@ -28,7 +28,7 @@
    #container2{
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4rem 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .6fr 4rem .7fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-areas: "header header"
@@ -168,6 +168,46 @@ main {
 #titleDirectory{
   font-size: 2.5rem;
 }
+
+
+
+
+  /*---------------thanks page--------------*/
+
+  #containerThanks{
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: .7fr .5fr .6fr .3fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: "header"
+               "title"
+               "thanksP"
+               "workingH"
+               "footer";
+   }
+  
+
+
+   .list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list section {
+    flex-direction: row;
+  }
+
+  .list section img {
+    display: none;
+
+
+
+
+
+
+
+
 
 } 
 
