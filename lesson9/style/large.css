@@ -4,4 +4,57 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+
+
+
+  .wireframesDirectoryC{
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 1fr 1.3fr 2fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    grid-template-areas:"wiretitle" 
+                        "wirelarge"
+                        "wiremedium"
+                        "wiresmall";
+
+}
+
+#wiretitle{
+    grid-area: wiretitle;
+    background-image: linear-gradient( to right, #7c2319,  #000000);
+    color: white;
+    margin-bottom: -2rem;
+}
+
+
+#wirelarge{
+	grid-area: wirelarge;
+    text-align: center;
+    font-size: 3rem;
+    max-height: 900px;
+}
+
+#wiremedium{
+	grid-area: wiremedium;
+    text-align: center;
+    max-height: 900px;
+}
+
+#wiresmall{
+	grid-area: wiresmall;
+    text-align: center;
+}
+
+#wirehtitle{
+    font-size: 3rem;
+}
+
+
+#wireIMG{
+    max-width: 900px;
+}
+
 }
