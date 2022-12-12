@@ -135,12 +135,12 @@ h4{
   max-height: 300px;
  }
 
- #sppictures{
+ .sppictures{
 	opacity:0.5;
 	transition: 1s ease;
 	}
 	
-#sppictures:hover{
+.sppictures:hover{
 	opacity:1;
 	transition: 1s ease;
 	}
