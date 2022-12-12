@@ -12,8 +12,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
 	</head>
+
 	<body>
-		<div id="containerDirectory" >
+		<div id="containerContactus" >
 			<div class="item header">
 				<picture class="subitem himage">
 					<img id="imglogo" src="../chamber/images/logo.webp" alt= "chamber logo">
@@ -48,22 +49,93 @@
 				</div> 
 				<div class="currentdate"><span id="today"></span>
 				</div> 
-			</div>		   
-            <div class="directoryTitleC">
-                <h1 id="titleDirectory">São Paulo Chamber of Commerce Directory</h1>
+			</div>	
+
+            <div class="contactusBox">
+                <h3 id="contactusTitle">Contact us</h3>
+				<hr/>
+                <h4 class="cttTitle"><span>&#9993;</span> Address</h4>
+                <ul>					
+					<li>São Paulo Chamber of Commerce</li><br>
+                    <li>Av Rangel Pestana 300</li><br>
+                    <li>São Paulo, SP</li><br>
+					<li>CEP 01017-911</li><br>
+                </ul>
+                <h4 class="cttTitle"><span>&#9742; Phone</span></h4>
+                <ul>
+                    <li>+(55)11 9999-9999</li>
+                    </ul>
+                <h4 class="cttTitle"><span>&#64;</span> Email</h4>
+                    <ul>
+                    <li>info@brecoco.com</li>
+                    </ul>
+				<h4 class="cttTitle"><span>&#9888;</span> Office hours:</h4>
+					<ul>
+                    <li>Mon-Friday: 8:00AM - 6:00PM / Saturdays - Sundays: 8:00AM - 12:00PM.</li>
+                    </ul>
+					
+            </div> 
+
+			<div class="pointsofContact">
+				<h3 id="pointsTitle">Points of Contact</h3>
+				<hr/>
+				<h4 class="cttTitle">Jose Silva</h4>
+				<ul>					
+					<li>President & CEO</li><br>
+					<li>+(55)11 9999-8888</li><br>
+				</ul>
+				<h4 class="cttTitle">Maria Silva</h4>
+				<ul>					
+					<li>Vice President of Marketing and Communications</li><br>
+					<li>+(55)11 9999-7777</li><br>
+				</ul>
+				<h4 class="cttTitle">Joao Souza</h4>
+				<ul>					
+					<li>Membership Director</li><br>
+					<li>+(55)11 7777-8888</li><br>
+				</ul>
+				<h4 class="cttTitle">Madalena Santos</h4>
+				<ul>					
+					<li>Operations Assistant</li><br>
+					<li>+(55)11 6666-8888</li><br>
+				</ul>
+			</div> 
+
+            <div class="contactusForm">
+                <h1 id="titlecontactusForm">CONTACT US!</h1>
             </div>
 
-            <main>
-                <div class="cards"></div>
-            </main>
-            
-			<div class="item footer">
+            <div class="cformHTML">
+              
+              <form method="get" action="thanksContact.html">
+				
+                <h3 id="contactusTitle">Or send us a message!</h3>
+                <fieldset>
+                  <legend>Contact Form</legend>
+                  <label class="top">Name* <input type="text" name="fname" required></label>
+                  <label class="top">Email* <input type="email" name="email" placeholder= "someone@gmail.com" required></label>
+                  <label  class="top" for="textbox">A brief description of your question/concern:</label>
+                  <textarea id="textbox" name="msgbox" maxlength="200" rows="5"></textarea>
+                </fieldset>
+                <input type="submit" value="Submit" class="submitBtn">
+                <div>
+                  <p id="subtime" style="display: none;"></p>
+                </div>
+              </form>
+            </div>
+
+
+            <div class="item footer">
 				<picture class="fimage">
 					<img src="../chamber/images/logo.webp" alt= "chamber logo">
 				</picture>  
 				<section class="subitem ftitle">         
 					<h3>São Paulo Chamber of Commerce</h3>
 					<h4> Av Rangel Pestana 300<br> São Paulo, SP - 01017-911</h4>
+					<div class="VisDate">
+						<h4 class="VisitDate">Number of Visits:  <span class="visits"></span></h4>   
+						<h4 class="VisitDate">Days since last visited:  <span id="VisitedLast"></span></h4>
+					</div>    
 				</section>
 				<div class="subitem contactinfo">
 					<h2>info@brecoco.com</h2>
@@ -76,7 +148,11 @@
 			</div>
 		</div>		
 	<script src="../chamber/scripts/date.js"></script> 
-	<script src="../chamber/scripts/menu_open.js"></script>
-    <script src="../chamber/scripts/directory_comp.js"></script> 
+	<script src="../chamber/scripts/menu_open.js"></script> 
+	<script src="../chamber/scripts/banner.js"></script>
+	<script src="../chamber/scripts/windchill.js"></script>
+	<script src="../chamber/scripts/lazyLoading.js"></script>
+	<script src="../chamber/scripts/localStorage.js"></script>
+	
 	</body>
 </html>

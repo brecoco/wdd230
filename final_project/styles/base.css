@@ -456,21 +456,21 @@ justify-content: center;
  }
 
 
-.formHTML fieldset {
+form fieldset {
 	margin: 2rem 0;
 	border: 1px solid black;
 	border-radius: 10px;
 	padding: .5rem 2%;
 }
 
-.formHTML legend {
+form legend {
 	color: #7c2319;
 	margin: 0 1rem;
 	padding: 0 .5rem;
 	font-weight: bold;
 }
 
-.formHTML label.top, .formHTML div{
+form label.top, form div{
 	display: block;
 	padding-top: 1rem;
 	color: #7c2319;
@@ -478,7 +478,7 @@ justify-content: center;
 }
 
 
-.formHTML label.top input, .formHTML textarea{
+form label.top input, form textarea{
 	display: block;
 	font-size: 1rem;
 	border: solid 1px black;
@@ -488,12 +488,12 @@ justify-content: center;
 	background-color: rgba(0,0,0,0.1);
 }
 
-.formHTML label.sbs {
+form label.sbs {
 	display: block;
 	padding: .75% 0;
 }
 
-.formHTML input.submitBtn {
+form input.submitBtn {
 	border: none;
 	background-image: linear-gradient( to right, #7c2319,  #000000);
 	color: white;
@@ -504,11 +504,11 @@ justify-content: center;
 	max-width: 20rem;
 }
 
-.formHTML label.top input:required{
+form label.top input:required{
 	border-left: red solid 6px;
 }
 
-.formHTML label.top input:required:valid {
+form label.top input:required:valid {
 	border-left: green solid 6px;
 }
 
@@ -648,151 +648,3 @@ justify-content: center;
 }
 
 
-
-
-
-
-
-/*------------------ CONTACT US ---------------------*/
-
-html{
-	min-width: 500px;
-}
-
-#containerContactus{
-	display: grid; 
-	grid-template-columns: 1fr;
-	grid-template-rows: .3fr 0.2fr 1.4fr 1.4fr 1fr .6fr;
-	grid-column-gap: 5px;
-	grid-row-gap: 10px;
-	grid-template-areas: "header"
-						"title"
-						"contactusBox"
-						"pointsofContact"
-						"form2"
-						"footer";
-  }
-  
-
-.cformHTML{
-	grid-area: form2;
-}
-
-  .contactusBox {
-	grid-area: contactusBox;
-	border: solid 1px black;
-	border-radius: 8px;
-	margin:2.6rem 0 0 0 ;
-	height: 96%;
-	padding: .5rem .5rem;
-	font-size: 1rem;
-	background-color: rgb(238, 238, 238);
-	justify-content: center;
-  }
-  
-  .cttTitle{
-	font-size: 1.3rem;
-	color: black;
-	font-weight: bold;
-	margin-left: 0.5rem;
-  }
-  
-  #contactusTitle, #pointsTitle{
-	font-size: 1.8rem;
-	color: red;
-	font-weight: bold;
-	margin-left: 0.5rem;
-	text-align: center;
-	content: '\260E';
-  }
-  
-  
-  .pointsofContact{
-	grid-area: pointsofContact;
-	display: block;
-	border: solid 1px black;
-	border-radius: 8px;
-	margin:2.6rem 0 0 0;
-	height: 96%;
-	padding: .5rem .5rem;
-	font-size: 1rem;
-	background-color: rgb(238, 238, 238);
-	justify-content: center;
-  }
-
-.contactusForm{
-	grid-area: title;
-	  border: solid 1px black;
-	  border-radius: 4px;
-	background-color: rgb(194, 70, 70);
-	text-align: center;
-  }
-  
-  #titlecontactusForm{
-	color: rgb(65, 12, 12);
-	font-weight: bold;
-	font-style: oblique;
-	font-weight: 3000;
-	font-size: 40px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	padding: .75rem;
-	
-  }
-
-
-  
-.cformHTML fieldset {
-	margin: 2rem 0;
-	border: 1px solid black;
-	border-radius: 10px;
-	padding: .5rem 2%;
-}
-
-.cformHTML legend {
-	color: #7c2319;
-	margin: 0 1rem;
-	padding: 0 .5rem;
-	font-weight: bold;
-}
-
-.cformHTML label.top, .cformHTML div{
-	display: block;
-	padding-top: 1rem;
-	color: #7c2319;
-	font-weight: bold;
-}
-
-
-.cformHTML label.top input, .cformHTML textarea{
-	display: block;
-	font-size: 1rem;
-	border: solid 1px black;
-	border-radius: 4px;
-	padding: .50rem;
-	width: 100%;
-	background-color: rgba(0,0,0,0.1);
-}
-
-.cformHTML label.sbs {
-	display: block;
-	padding: .75% 0;
-}
-
-.cformHTML input.submitBtn {
-	border: none;
-	background-image: linear-gradient( to right, #7c2319,  #000000);
-	color: white;
-	border-radius: 1rem;
-	padding: .75rem 1.5rem;
-	margin: 0 0 2rem 2%;
-	width: 96%;
-	max-width: 20rem;
-}
-
-.cformHTML label.top input:required{
-	border-left: red solid 6px;
-}
-
-.cformHTML label.top input:required:valid {
-	border-left: green solid 6px;
-}

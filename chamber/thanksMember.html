@@ -12,8 +12,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
 	</head>
+
 	<body>
-		<div id="containerDirectory" >
+		<div id="containerThanks" >
 			<div class="item header">
 				<picture class="subitem himage">
 					<img id="imglogo" src="../chamber/images/logo.webp" alt= "chamber logo">
@@ -48,14 +49,26 @@
 				</div> 
 				<div class="currentdate"><span id="today"></span>
 				</div> 
-			</div>		   
-            <div class="directoryTitleC">
-                <h1 id="titleDirectory">São Paulo Chamber of Commerce Directory</h1>
+			</div>	
+
+
+            <div class="titleform">
+                <h1 id="titleJoinForm">Welcome to São Paulo Chamber of Commerce!</h1>
             </div>
 
-            <main>
-                <div class="cards"></div>
-            </main>
+            <p class="thanksP">Thank you for submitting your join application! Our team will be contacting you 
+              shortly to get complete the proccess!</p>
+            <p class="workingH">Office hours: <br>Mon-Friday: 8:00AM - 6:00PM / Saturdays - Sundays: 8:00AM - 12:00PM.</p>
+
+
+
+
+
+
+
+
+
+
             
 			<div class="item footer">
 				<picture class="fimage">
@@ -64,6 +77,10 @@
 				<section class="subitem ftitle">         
 					<h3>São Paulo Chamber of Commerce</h3>
 					<h4> Av Rangel Pestana 300<br> São Paulo, SP - 01017-911</h4>
+					<div class="VisDate">
+						<h4 class="VisitDate">Number of Visits:  <span class="visits"></span></h4>   
+						<h4 class="VisitDate">Days since last visited:  <span id="VisitedLast"></span></h4>
+					</div>    
 				</section>
 				<div class="subitem contactinfo">
 					<h2>info@brecoco.com</h2>
@@ -76,7 +93,11 @@
 			</div>
 		</div>		
 	<script src="../chamber/scripts/date.js"></script> 
-	<script src="../chamber/scripts/menu_open.js"></script>
-    <script src="../chamber/scripts/directory_comp.js"></script> 
+	<script src="../chamber/scripts/menu_open.js"></script> 
+	<script src="../chamber/scripts/banner.js"></script>
+	<script src="../chamber/scripts/windchill.js"></script>
+	<script src="../chamber/scripts/lazyLoading.js"></script>
+	<script src="../chamber/scripts/localStorage.js"></script>
+	
 	</body>
 </html>
