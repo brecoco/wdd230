@@ -5,44 +5,84 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body{
-  max-width: 95%;
-  margin: 10%;
-  min-width: 350px;
+  margin: 1%;
+  min-width: 490px;
   
 }
 
-#container{
-	display: grid; 
-	grid-template-columns: 100%;
-	grid-template-rows: .4fr 4rem 1fr .8fr .9fr .6fr .6fr .6fr .8fr;
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-	grid-template-areas: "header"
-						 "banner"
-						 "hero"
-						 "news" 
-						 "event"	
-						 "weather"
-						 "spotlight1"
-						 "spotlight2"
-						 "footer"
-						 ;
+.sr-only{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
  }
 
 
 
 
+
+#container{
+	display: grid; 
+	grid-template-columns: 100%;
+	grid-template-rows: .5fr 1fr .4fr .6fr 1.2fr 2fr 2fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-areas: "header"
+						 "hero"
+						 "news"
+						 "fruits_picture" 
+						 "join"	
+						 "about"
+						 "weather"
+						 "footer"
+						 ;
+ }
+
+
+ h1{
+	font-size: 2rem;
+	color: white;
+	font-family: cursive;
+}
+
+h2{
+	font-size: 0.7rem;
+	color: white;
+	margin-left: 0.5rem;
+	font-family: cursive;
+}
+ 
+h3{
+	font-size: 1rem;
+	color: white;
+	margin-left: 0.5rem;
+	font-family: cursive;
+}
+
+h4{
+	font-size: 0.7rem;
+	color: white;
+	margin-left: 0.5rem;
+	font-family: cursive;
+}
+
+
+/*---------------------HEADER_____________________________*/
+
+
 .header{
-	background-image: linear-gradient( to right, #7c2319,  #000000);
+	background-image: linear-gradient( to right, #149c3d,  #8cce95);
 	text-align: center;
 	border: 2px solid white;
 	grid-area: header;
 	display: grid;
-	grid-template-columns: 1fr 1fr 2fr 1fr;
-	grid-template-rows: 3fr 1fr;
+	grid-template-columns: 1fr .6fr 1fr;
+	grid-template-rows: 2fr .5fr;
 	grid-column-gap: 10px;
-	grid-template-areas: "nav himage title social "
-						 "currentdate currentdate currentdate currentdate";
+	grid-template-areas: "himage title social"
+						 "nav nav nav";
 }
 
 
@@ -51,65 +91,59 @@ body{
 }
 
 
-#imglogo{width: 80px;
-margin-left: 1rem;}
-
-.title{grid-area: title;}
-
-h1{
-	font-size: 1.2rem;
-	margin-top: 1rem;
-	color: white;
-	margin-left: 0.5rem;
+#imglogo{width: 100px;
 }
 
-h2{
-	font-size: 0.7rem;
-	color: white;
-	margin-left: 0.5rem;
+.title{
+	grid-area: title;
+	margin-right: 1rem;
+	font-family: cursive;
 }
 
-h3{
-	font-size: 1rem;
-	color: white;
-	margin-left: 0.5rem;
+
+
+
+.social{
+	grid-area: social;
+	width: 20%;
+	display: flex;
+	margin:auto;
 }
 
-h4{
-	font-size: 0.7rem;
-	color: white;
-	margin-left: 0.5rem;
+.box-p{
+	font-size: .8rem;
+	color: black;
+	text-align: center;
+	margin-bottom: 5rem;
+	margin:.5rem;
 }
 
 
 a{
-	font-size: .7rem;
+	font-size: 1rem;
 	color: white;
+	font-family: cursive;
   }
 
-.nav{grid-area: nav;
-	font-size: 2rem;
-	margin-top: 1rem;
-	margin-left: 1.5rem;
-	display: flex;
-	max-height: 30px;
-	position: absolute;
-	margin-bottom: 1rem;
-}
+  .nav{
+	grid-area: nav;
+	display: block;
+	margin: auto;
+  }
+
+  #ulList{
+	list-style:none;
+	float:center;
+	width: 100%;
+  }
+
+  #ulList li{
+	position:relative;
+	float:left;
+	}
 
 
-.social{grid-area: social;
-	width: 20%;
-}
 
-.currentdate{grid-area: currentdate;
-	background-color:#7c2319;
-	margin-left: 1rem;
-	margin-right: 1rem;
-	margin-top: .5rem;
-	margin-bottom: .5rem;
-	color: white;
-}
 
 svg{
 	margin: .5rem;
@@ -118,152 +152,276 @@ svg{
 	height: 2rem;
 }
 
-
-#banner{
-	grid-area: banner;
-	border: 2px solid black;
-	box-shadow: 0 0 10px #7c2319;
-	background-color: #000000;
+#ulList li a{
+	color:#333;
+	text-decoration:none; 
+	padding:5px 10px; 
+	display:block;
 }
 
-#box-banner{
-	font-size: 1rem;
-	color: white;
-	text-align: center;
-	margin-top: 1rem;
-}
-
-.event{
-	grid-area: event;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;
-	align-items: center;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	
-}
-
-#congressimg{
-	display: block;
-	max-width:100px;
-	margin-left: auto;
-	margin-right: auto;
+#ulList li a:hover{
+background:#333;
+color:#fff;
+text-shadow:0px 0px 5px #fff;
 }
 
 
 
-.hero{
-	grid-area: hero;
-  }
 
-#imgwdd230{
+
+#button span:nth-child(1) {display: block;}
+#button span:nth-child(2) {display: none;}
+#button.open span:nth-child(1) {display: none;}
+#button.open span:nth-child(2) {display: block;}
+
+
+
+
+
+/*----------------------------------------------------------*/
+
+/*-----------------------MAIN-------------------------------*/
+
+
+
+
+#cover_image{
 	grid-area: hero;
     width: 100% ;
     height: 100%;
-    margin: auto;
-    padding: auto;
-    justify-content: center;
 }
 
-.weather{
-	grid-area: weather;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;
+#welcomePictxt{
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+    font-size: 2rem;
 	text-align: center;
-	background-image: linear-gradient( to bottom, #8adbe9,  #4561af);
-	/*background-image: url("../images/weather.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;*/
-	color: rgb(255, 255, 255);
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: .2fr 1fr .2fr;
-	grid-column-gap: 2px;
-	grid-template-areas: "weathertitle weathertitle"
-						 "weather-icon current-temp"
-						 "linkW linkW"
+	color: white;
+	margin:-140px 0 0 -220px;  
+	border: solid 2px black;  
+	border-radius: 10px;
+	font-weight: bold;
+	font-family: cursive;
+	background-image: linear-gradient( to right, #149c3d,  #8cce95);
+
 }
+
+
+
+.joinBtnP{
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+	border: 2px solid #000000;
+	margin:40px 0 0 -90px;   
+	background-image: linear-gradient( to right, #149c3d,  #8cce95);
+	color: white;
+	border-radius: 1rem;
+	padding: .55rem 0.55rem .55rem .55rem;
+	width: 96%;
+	max-width: 12rem;
+	max-height: 3rem;
+    font-size: 1.1rem;
+	font-family: cursive;
+
+}
+
+
+
+.news{
+	grid-area: news;
+	text-align: center;
+}
+
+.boxNews{
+	text-align: center;
+	font-style: italic;
+}
+
+
+.box-titles, #joinTxt{
+	font-size: 1.2rem;
+	color: white;
+	text-align: center;
+	margin: auto;
+	background-color: #149c3d;
+
+}
+
+
+.fruits_picture{
+	grid-area: fruits_picture;
+	margin-top: -2rem;
+}
+
+#fruits1{
+	max-width:60%;
+	margin: auto;
+	display: block;
+}
+
+
+
+
+.join{
+	grid-area: join; 
+}
+	
+
+#juice_image{
+	grid-area: hero;
+    width: 100% ;
+    height: 100%;
+	margin-top: 3rem;
+}
+
+
+
+.joinBtn2{
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+	border: 2px solid #000000;
+	margin:200px 0 0 -90px;   
+	background-image: linear-gradient( to right, #149c3d,  #8cce95);
+	color: white;
+	border-radius: 1rem;
+	padding: .55rem 0.55rem .55rem .55rem;
+	width: 96%;
+	max-width: 12rem;
+	max-height: 3rem;
+    font-size: 1.1rem;
+	font-family: cursive;
+}
+
+
+
+.about{
+	grid-area: about;
+}
+
+#drinkTxt{
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+    font-size: 1rem;
+	text-align: center;
+	color: black;
+	margin:-170px 0 0 -220px;  
+	font-weight: bold;
+	font-family: cursive;
+
+}
+
+
+#carlsbad_image{
+	width: 60%;
+	margin: auto;
+	display: block;
+	margin-top: 1rem;
+}
+
+
+#MapLabel{
+	text-align: center;
+}
+
+
+
+
+/*----------------------------------------------------------*/
+
+
+
+
+/*-----------------------Weather-------------------------------*/
+
+
+.weather {
+	grid-area: weather;
+	background-color: #b6e4bc;
+	padding: 5px;
+	margin-top: 3rem;
+   }
+  
+   .townWeather {
+	text-align: center;
+   }
+
+
+.weatherContainer {
+	display: flex;
+  }
+  
+  .weatherContent {
+	flex: 1 1 100%;
+  }
+  
+  .foreContainer {
+	display: flex;
+  }
+  
+  .foreContainer1 {
+	flex: 1 1 100%;
+	border: 2px solid black;
+	font-family: cursive;
+	padding: 7px;
+  }
+  
+  .foreContent {
+	align-content: center;
+  }
+  
+  .weathertoday {
+	padding: 3% 0px;
+	text-align: center;
+	margin: auto;
+	
+  }
+  
+  .threeTitle, .cTemp{
+	text-align: center;
+	color: #000000;
+	font-size: 2rem;
+  }
+  
+  .townWeather {
+	color:#166831;
+  }
+
 
 #weathertitle{
 	grid-area: weathertitle;
 	font-size: 1.5rem;
 }
 
-#current-temp{
-	grid-area: current-temp;
-	font-size: 2rem;
-	margin-bottom: 10rem;
-	border-bottom: white;
+
+.imageIcon{
+	width: 60px;
 }
 
-#currently{
-	grid-area: current-temp;
-	font-size: 1.2rem;
-}
-
-
-#windSpeed{
-	grid-area: current-temp;
-	font-size: 1rem;
-}
-
-#windchill{
-	grid-area: current-temp;
-	font-size: 1rem;
-}
-
-#weather-icon{
-	grid-area: weather-icon;
-	width: 100px;
-}
-
-.tempInfo{
-	margin-top: 2rem;
+.condition, .humidity{
+	font-family: cursive;
 }
 
 #linkW{
-	grid-area: linkW;
-	text-align: center;
-	justify-content: center;
-}
-
-
-.hilow{
-	font-size: 1rem;
 	margin: auto;
 }
 
+/*----------------------------------------------------------*/
 
-.join{
-	grid-area: join; display: none;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;}
+/*-----------------------Footer-------------------------------*/
 
-.news{
-	grid-area: news;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;}
 
-.spotlight1{
-	grid-area: spotlight1;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;}
 
-.spotlight2{
-	grid-area: spotlight2;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;}
-
-.spotlight3{
-	grid-area: spotlight3; 
-	display: none;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;}
 
 .footer{
-	background-image: linear-gradient( to right, #7c2319,  #000000);
-	grid-area: footer;
+	background-image: linear-gradient( to right, #149c3d,  #8cce95);
 	text-align: center;
 	border: 2px solid white;
 	display: grid;
@@ -312,339 +470,5 @@ justify-content: center;
  }
 
  
- nav ul.open{
-	display: block;
-  }
-
-
-  nav ul{
-    display: none;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background: transparent;
-    border: none;
-  }
-
-
-
-.box-titles{
-	font-size: 1.2rem;
-	color: black;
-	text-align: center;
-
-}
-
-
-
-.box-p{
-	font-size: .8rem;
-	color: black;
-	text-align: center;
-	margin-bottom: 5rem;
-	margin:.5rem;
-}
-
-
-
-
-.boxNews{
-	font-size: 1rem;
-	color: black;
-	text-align: center;
-	margin-left: .5rem;
-	margin-right: .5rem;
-	margin-top: 2rem;
-}
-
-
-
-#spcity{
-	display: block;
-	max-width: 120px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -5px;
-}
-
-
-
-
-#sppictures{
-	display: block;
-	max-width: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 5px;
-}
-
-#spmap{
-	display: block;
-	max-width: 120px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-
-.pic1{
-	grid-area: pic1;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;
-	text-align: center;
-}
-
-
-
-.join1{
-	grid-area: join1;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;}
-
-
-.hero1{
-	grid-area: hero1;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;
-	text-align: center;
-}
-
-
-.spotlight33{
-	grid-area: spotlight33;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 10px #7c2319;
-	text-align: center;
-}
-
-
-#button span:nth-child(1) {display: block;}
-#button span:nth-child(2) {display: none;}
-#button.open span:nth-child(1) {display: none;}
-#button.open span:nth-child(2) {display: block;}
-
-
-
-
-
-/*------------------ FORM ---------------------*/
-
-
-.membershipbenefits {
-	display: none;
-}
-
-#titleJoinForm {
-	font-size: 1.5rem;
-	margin-top: 1rem;
-	color: black;
-	margin-left: 0.5rem;
-	text-align: center;
-}
-
-
-#container3{
-	display: grid; 
-	grid-template-columns: 100%;
-	grid-template-rows: .40fr 0.2fr 2fr .75fr;
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-	grid-template-areas: "header"
-						 "title"
-						 "form"
-						 "footer";
- }
-
-
-form fieldset {
-	margin: 2rem 0;
-	border: 1px solid black;
-	border-radius: 10px;
-	padding: .5rem 2%;
-}
-
-form legend {
-	color: #7c2319;
-	margin: 0 1rem;
-	padding: 0 .5rem;
-	font-weight: bold;
-}
-
-form label.top, form div{
-	display: block;
-	padding-top: 1rem;
-	color: #7c2319;
-	font-weight: bold;
-}
-
-
-form label.top input, form textarea{
-	display: block;
-	font-size: 1rem;
-	border: solid 1px black;
-	border-radius: 4px;
-	padding: .50rem;
-	width: 100%;
-	background-color: rgba(0,0,0,0.1);
-}
-
-form label.sbs {
-	display: block;
-	padding: .75% 0;
-}
-
-form input.submitBtn {
-	border: none;
-	background-image: linear-gradient( to right, #7c2319,  #000000);
-	color: white;
-	border-radius: 1rem;
-	padding: .75rem 1.5rem;
-	margin: 0 0 2rem 2%;
-	width: 96%;
-	max-width: 20rem;
-}
-
-form label.top input:required{
-	border-left: red solid 6px;
-}
-
-form label.top input:required:valid {
-	border-left: green solid 6px;
-}
-
-.titleform{
-	grid-area: title;
-	  border: solid 1px black;
-	  border-radius: 4px;
-	background-color: rgb(194, 70, 70);
-  }
-  
-  #titleJoinForm{
-	color: rgb(65, 12, 12);
-	font-weight: bold;
-	font-style: oblique;
-	font-weight: 3000;
-	font-size: 30px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	padding: .75rem;
-  }
-
-
-  /*---------------thanks page--------------*/
-
-  #containerThanks{
-	display: grid; 
-	grid-template-columns: 100%;
-	grid-template-rows: 1fr .5fr .6fr .3fr 1fr;
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-	grid-template-areas: "header"
-						 "title"
-						 "thanksP"
-						 "workingH"
-						 "footer";
- }
-
- .thanksP{
-	grid-area: thanksP;
-	border: 2px solid #b12415;
-	box-shadow: 0 0 30px #7c2319;
-	font-size: 20px;
-	text-align: center;
-	font-weight: bold;
-	padding: .75rem;
-	margin: auto;
-}
-
-.workingH{
-	border: 2px solid #b12415;
-	font-size: 12px;
-	text-align: center;
-	font-weight: bold;
-	padding: .75rem;
-	margin: auto;
-	background-color: #000000;
-	color: white;
-	margin-bottom: 1rem;
-}
-
-
-
-
-
-
-
-/*------------------ DIRECTORY ---------------------*/
-
-.directoryTitleC{
-	grid-area: directoryTitleC;
-	border: solid 1px black;
-	border-radius: 4px;
-	background-color: rgb(194, 70, 70);
-  }
-  
-  #titleDirectory{
-	color: rgb(65, 12, 12);
-	font-weight: bold;
-	font-style: oblique;
-	font-weight: 3000;
-	font-size: 30px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	padding: .75rem;
-  }
-
-
-  .directoryClass{
-    max-width: 100%;
-    margin: .3em;
-    padding: 1em;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    justify-content: center;
-    margin: .5rem;
-    border-radius: 2rem;
-	border: 2px solid red;
-}
-
-.portrait {
-    height: 250px;
-    width: 250px;
-    margin-bottom: 1rem;
-    transition: transform .2s ease; /* Animation */
-}
-
-
-
-.website,#h3Directory,#h4Directory{
-    font-family: sans-serif ;
-}
-
-#titleDirectory{
-    font-size: 2rem;
-    font-weight: bold;
-	text-align: center;
-}
-
-.website:hover{
-	color: rgb(43, 12, 128);
-	font-weight: bold;
-}
-
-.website{
-    font-size: 1.5rem;
-    font-weight: bold;
-	color: #a02d20;
-}
-
-#h3Directory{
-    font-size: 1rem;
-	color: #000000;
-}
-
-#h4Directory{
-    font-size: 1rem;
-	color: #000000;
-	font-style: italic;
-}
 
 
