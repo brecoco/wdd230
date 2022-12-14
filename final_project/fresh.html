@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>BYU | WDD230 Final Project: Bountiful Foods | Thiago Silva | </title>
+    <meta name="description" content="Thiago Silva - WDD230 Assignments">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../final_project/styles/base.css"> 
+    <link rel="stylesheet" href="../final_project/styles/medium.css"> 
+    <link rel="stylesheet" href="../final_project/styles/large.css"> 
+</head>
+
+<body>
+  <div class="item header">
+      <picture class="subitem himage">
+          <img id="imglogo" src="../final_project/images/logo.png" alt= "fruits logo">
+      </picture>
+      <section class="subitem title">
+          <h1>Bountiful Foods</h1>
+      </section>
+      
+      <nav class="subitem nav">
+          <!--<button id="button"><span>&#9776;</span><span>X</span></button>-->
+          <ul id="ulList">
+            <li><a href="../final_project/home.html">Home</a></li>
+            <li><a href="../final_project/fresh.html">Fresh</a></li>
+            <li><a href="../final_project/aboutus.html">Contact</a></li>
+          </ul>
+      </nav>
+      <div class="subitem social">
+          <a href="https://www.twitter.com"><img class="social_icon" src="../final_project/images/twitter.jpg" width="42" height="42" alt="twitter"></a>
+          <a href="https://www.instagram.com"><img class="social_icon" src="../final_project/images/instagram.jpg" width="42" height="42" alt="instagram"></a>
+          <a href="https://www.facebook.com"><img class="social_icon" src="../final_project/images/facebook.jpg" width="42" height="42" alt="facebook"></a>
+      </div>
+  </div>
+    <div id="containerOrder" >
+    <main>
+      <div class="formHTML">
+        <form method="get" >
+          <h2 class="box-titles">Personal Order!</h2>
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label class="top">First Name* <input class="firName" type="text" name="fname" required></label>
+            <label class="top">Last Name* <input class="lname" type="text" name="lname" required></label>
+            <label class="top">Email Address* <input class="email" type="email" name="email" placeholder= "someone@gmail.com" required></label>
+            <label class="top">Phone* <input class="phone" type="tel" name="phone" placeholder="1235551234" required></label>
+          </fieldset>
+          
+        </form>
+          <fieldset class="fieldset">
+            <legend>Make Your Selection</legend>
+
+            <div class="listcontainer">
+              <select id="select" name="order" size="20"></select>
+              <button class="addBtn" type="submit">Add Fruit</button>
+          
+          
+              <div class="input">
+                <label id="sel3">Select 3 Fruits</label>
+              </div>
+              <ol class="list">
+                <li class="order1"><input type="text" id="order1" placeholder="Add Fruit" required></label></li>
+                <li class="order2"><input type="text" id="order2" placeholder="Add Fruit" required></label></li>
+                <li class="order3"><input type="text" id="order3" placeholder="Add Fruit" required></label></li>
+              </ol>
+              <label  class="specialInstr" for="textArea">Add Special Instructions For Drink Preparation</label>
+                <textarea id="textArea" name="msg" maxlength="200" rows="5"></textarea>
+              <button class="submitBtn" type="submit">Place Your Order</button>
+            </div>
+          </fieldset>
+    </div>
+    <div class="orderDiv">
+      <h2 class="orderTitle"></h2>
+      <p class="day"></p>
+      <p class="firstname"></p>
+      <p class="mail"></p>
+      <p class="phoneNumber"></p>
+      <p class="specialInstruction"></p>
+      <p class="fruitsSelected"></p>
+      <p class="totCarbs"></p>
+      <p class="totProteins"></p>
+      <p class="totFats"></p>
+      <p class="totSugar"></p>
+      <p class="totCal"></p>
+
+    </div>
+
+    </main>
+    <div class="item footer">
+      <picture class="fimage">
+          <img id="imglogo" src="../final_project/images/logo.png" alt= "fruits logo">
+      </picture>  
+      <section class="subitem ftitle">         
+          <h3>Bountiful Foods</h3>
+          <h4>2599 State St<br> Carlsbad, CA 92008, EUA</h4>
+          <div class="VisDate">
+              <h4 class="VisitDate">Number of Visits:  <span class="visits"></span></h4>   
+              <h4 class="VisitDate">Days since last visited:  <span id="VisitedLast"></span></h4>
+          </div>    
+      </section>
+      <div class="subitem contactinfo">
+          <h2>info@brecoco.com</h2>
+          <h2>+(55)11 9999-9999 </h2>
+        </div>
+        <div class="developerinfo">
+          &copy; <span id="year"></span> | Thiago Silva | Brazil | <a href="http://www.byui.edu/online/" target="_blank">BYU-I Online Learning</a> | Last  Updated: <span id="updated">
+          </span>  
+        </div>
+    </div>
+  </div>	
+  <script src="../final_project/scripts/localStorage.js"></script>	
+  <script src="../final_project/scripts/date.js"></script>
+  <script src="../final_project/scripts/order.js"></script>
+</body>
+</html>

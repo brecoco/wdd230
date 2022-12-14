@@ -6,7 +6,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 body{
   margin: 1%;
-  min-width: 490px;
+  min-width: 450px;
   
 }
 
@@ -24,18 +24,20 @@ body{
 #container{
 	display: grid; 
 	grid-template-columns: 100%;
-	grid-template-rows: .5fr 1fr .4fr .6fr 1.2fr 2fr 2fr 1fr;
+	grid-template-rows: 1fr .4fr .4fr 1.2fr 1.3fr 1.3fr .7fr;
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
-	grid-template-areas: "header"
-						 "hero"
+	grid-template-areas: "hero"
 						 "news"
 						 "fruits_picture" 
 						 "join"	
 						 "about"
 						 "weather"
-						 "footer"
-						 ;
+						 "footer";
+ }
+
+ .aTitle{
+	display: none;
  }
 
 
@@ -74,7 +76,6 @@ h4{
 	background-image: linear-gradient( to right, #149c3d,  #8cce95);
 	text-align: center;
 	border: 2px solid white;
-	grid-area: header;
 	display: grid;
 	grid-template-columns: 1fr .6fr 1fr;
 	grid-template-rows: 2fr .5fr;
@@ -98,14 +99,17 @@ h4{
 	font-family: cursive;
 }
 
-
+.social_icon{
+	margin-left: 1rem;
+}
 
 
 .social{
 	grid-area: social;
-	width: 20%;
+	width: 100%;
 	display: flex;
 	margin:auto;
+	margin-left: 4rem;
 }
 
 .box-p{
@@ -118,7 +122,6 @@ h4{
 
 
 a{
-	font-size: 1rem;
 	color: white;
 	font-family: cursive;
   }
@@ -127,6 +130,7 @@ a{
 	grid-area: nav;
 	display: block;
 	margin: auto;
+	font-size: 1.5rem;
   }
 
   #ulList{
@@ -182,6 +186,10 @@ text-shadow:0px 0px 5px #fff;
 
 
 
+.hero{
+    margin-top: 1rem;
+    grid-area: hero;
+  }
 
 #cover_image{
 	grid-area: hero;
@@ -232,6 +240,7 @@ text-shadow:0px 0px 5px #fff;
 .news{
 	grid-area: news;
 	text-align: center;
+	font-family: cursive;
 }
 
 .boxNews{
@@ -256,9 +265,13 @@ text-shadow:0px 0px 5px #fff;
 }
 
 #fruits1{
-	max-width:60%;
+	max-width:28%;
 	margin: auto;
 	display: block;
+}
+
+.city{
+	display: none;
 }
 
 
@@ -273,7 +286,6 @@ text-shadow:0px 0px 5px #fff;
 	grid-area: hero;
     width: 100% ;
     height: 100%;
-	margin-top: 3rem;
 }
 
 
@@ -294,23 +306,39 @@ text-shadow:0px 0px 5px #fff;
 	max-height: 3rem;
     font-size: 1.1rem;
 	font-family: cursive;
+	animation: animate 1s linear infinite;
 }
 
 
 
+@keyframes animate {
+	0% {
+		color: red;
+	}
+  
+	50% {
+		color: #000000;
+	}
+  
+	100% {
+		color: red;
+	}
+  }
+
+
 .about{
 	grid-area: about;
+	margin-top: 1rem;
 }
 
 #drinkTxt{
     position:absolute;
     z-index:1;
     top:50%;
-    left:50%;
+	margin:-300px 0 0 0;  
     font-size: 1rem;
 	text-align: center;
 	color: black;
-	margin:-170px 0 0 -220px;  
 	font-weight: bold;
 	font-family: cursive;
 
@@ -364,11 +392,13 @@ text-shadow:0px 0px 5px #fff;
 	display: flex;
   }
   
-  .foreContainer1 {
+  .childContainer {
 	flex: 1 1 100%;
 	border: 2px solid black;
 	font-family: cursive;
 	padding: 7px;
+	font-size: 1rem;
+	text-align: center;
   }
   
   .foreContent {
@@ -454,7 +484,6 @@ justify-content: center;
  .item{
 	background-color: white;
     min-height: 50px;
-	max-height: 400px;
     min-width: 50px;
     position: relative;
     font-weight: bold;
@@ -464,9 +493,361 @@ justify-content: center;
 
  .subitem{
     color: black;
-    font-size: 20px;
  }
 
- 
+
+/*----------------------------------------------------------*/
+
+/*-----------------------Order Page-------------------------------*/
 
 
+#containerOrder{
+	display: grid; 
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr .5fr ;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+    margin-top: 1rem;
+	grid-template-areas: "formHTML"
+						 "footer"
+						 ;
+ }
+
+
+.formHTML fieldset {
+	margin: auto;
+	margin-top: 2rem;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: .5rem 2%;
+	max-width: 60%;
+	min-width: 300px;
+}
+
+label { 
+    display: flex;
+    width: 100%;
+    text-align: left;
+	margin: auto;
+} 
+
+
+.formHTML legend{
+	font-weight: bold;
+	color:#166831;
+}
+
+.formHTML label.top, .formHTML div{
+	padding-top: 1rem;
+	color:#166831;
+	font-weight: bold;
+}
+
+
+.formHTML label.top input, .formHTML textarea{
+	display: block;
+	font-size: 1rem;
+	border: solid 1px black;
+	border-radius: 4px;
+	padding: .50rem;
+	width: 200%;
+	background-color: rgba(0,0,0,0.1);
+}
+
+
+.formHTML input.submitBtn {
+	border: none;
+	background-image: linear-gradient( to right, #7c2319,  #000000);
+	color: white;
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	margin: 0 0 2rem 2%;
+	width: 96%;
+	max-width: 20rem;
+}
+
+.formHTML label.top input:required{
+	border-left: red solid 6px;
+}
+
+.formHTML label.top input:required:valid {
+	border-left: green solid 6px;
+}
+
+.titleform{
+	grid-area: title;
+	  border: solid 1px black;
+	  border-radius: 4px;
+	background-color: rgb(194, 70, 70);
+  }
+
+
+  .listcontainer{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: .2fr .5fr .2fr .2fr .5fr .3fr;
+	grid-column-gap: 10px;
+	grid-template-areas: "input input"
+						 "select list"
+						 "select addBtn"
+						 "specialInstr specialInstr"
+						 "textArea textArea"
+						 "submitBtn submitBtn"
+
+  }
+
+#select{
+	grid-area: select;
+}
+
+ .input{
+	grid-area: input;
+	margin: auto;
+	justify-content: center;
+ }
+
+.list{
+	grid-area: list;
+}
+.addBtn{
+	grid-area: addBtn;
+	margin: auto;
+	max-width: 100px;
+	max-height: 40px;
+}
+
+#order1, #order2, #order3{
+	display: block;
+	font-size: 1rem;
+	border: solid 1px black;
+	border-radius: 4px;
+	padding: .50rem;
+	width: 100%;
+	margin: 10px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+#sel3{
+	text-align: center;
+	font-size: 2rem;
+	margin-top: -40px;
+}
+
+
+.specialInstr{
+	grid-area: specialInstr;
+	width: 100%;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.submitBtn{
+	grid-area: submitBtn;
+	margin: auto;
+	max-width: 100px;
+	max-height: 40px;
+}
+
+
+.orderDiv{
+	font-family: cursive;
+	text-align: center;
+	max-width: 70%;
+	margin: auto;
+	margin-top: 2rem;
+}
+
+
+
+.orderTitle{
+	font-size: 2rem;
+	color: #149c3d;
+}
+
+
+
+
+
+
+.truck, .truck_picture{
+    display: none;
+   }
+
+
+
+
+   
+/*------------------ CONTACT US ---------------------*/
+
+html{
+	min-width: 500px;
+}
+
+#containerAboutUs{
+	display: grid; 
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.2fr 0.5fr 1.4fr 1.4fr .6fr .5fr;
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	margin-top: 1rem;
+	grid-template-areas: 
+						"title"
+						"location"
+						"contactusBox"
+						"pointsofContact"
+						"form2"
+						"footer";
+  }
+  
+
+.cformHTML{
+	grid-area: form2;
+}
+
+	.locations{
+		grid-area: location;
+		text-align: center;
+		font-size: 1rem;
+	}
+
+	#titlelocations{
+		font-size: 1rem;
+		color: #000000;
+	}
+
+	#maploc{
+		max-width: 80%;
+	}
+
+  .contactusBox {
+	grid-area: contactusBox;
+	border: solid 1px black;
+	border-radius: 8px;
+	margin:2.6rem 0 0 0 ;
+	height: 96%;
+	padding: .5rem .5rem;
+	font-size: 1rem;
+	background-color: rgb(238, 238, 238);
+	justify-content: center;
+  }
+  
+  .cttTitle{
+	font-size: 1.3rem;
+	color: black;
+	font-weight: bold;
+	margin-left: 0.5rem;
+  }
+  
+  .contactusTitle, #pointsTitle{
+	font-size: 1.8rem;
+	color: #149c3d;
+	font-weight: bold;
+	margin-left: 0.5rem;
+	text-align: center;
+	content: '\260E';
+  }
+  
+  
+  .pointsofContact{
+	grid-area: pointsofContact;
+	display: block;
+	border: solid 1px black;
+	border-radius: 8px;
+	margin:2.6rem 0 0 0;
+	height: 96%;
+	padding: .5rem .5rem;
+	font-size: 1rem;
+	background-color: rgb(238, 238, 238);
+	justify-content: center;
+  }
+
+.contactusForm{
+	grid-area: title;
+	  border: solid 1px black;
+	  border-radius: 4px;
+	  color: #149c3d;
+	text-align: center;
+  }
+  
+  #titlecontactusForm{
+	color: #149c3d;
+	font-weight: bold;
+	font-style: oblique;
+	font-size: 40px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: .75rem;
+	
+  }
+
+
+  
+.cformHTML fieldset {
+	margin: 2rem 0;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: .5rem 2%;
+}
+
+.cformHTML legend {
+	color: #149c3d;
+	margin: 0 1rem;
+	padding: 0 .5rem;
+	font-weight: bold;
+}
+
+.cformHTML label.top, .cformHTML div{
+	display: block;
+	padding-top: 1rem;
+	color: #149c3d;
+	font-weight: bold;
+}
+
+
+.cformHTML label.top input, .cformHTML textarea{
+	display: block;
+	font-size: 1rem;
+	border: solid 1px black;
+	border-radius: 4px;
+	padding: .50rem;
+	width: 100%;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.cformHTML label.sbs {
+	display: block;
+	padding: .75% 0;
+}
+
+.cformHTML input.submitBtn {
+	border: none;
+	background-image: linear-gradient( to right, #149c3d,  #8cce95);
+	color: white;
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	margin: 0 0 2rem 2%;
+	width: 96%;
+	max-width: 20rem;
+}
+
+.cformHTML label.top input:required{
+	border-left: red solid 6px;
+}
+
+.cformHTML label.top input:required:valid {
+	border-left: green solid 6px;
+}
+
+
+
+.sr-only{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+ }
+
+ .abouttxt{
+	font-family: cursive;
+ }

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>BYU | WDD230 Final Project: Bountiful Foods | Thiago Silva | </title>
+    <meta name="description" content="Thiago Silva - WDD230 Assignments">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../final_project/styles/base.css"> 
+    <link rel="stylesheet" href="../final_project/styles/medium.css"> 
+    <link rel="stylesheet" href="../final_project/styles/large.css"> 
+</head>
+
+
+<body>
+    <div class="item header">
+        <picture class="subitem himage">
+            <img id="imglogo" src="../final_project/images/logo.png" alt= "fruits logo">
+        </picture>
+        <section class="subitem title">
+            <h1>Bountiful Foods</h1>
+        </section>
+        
+        <nav class="subitem nav">
+            <!--<button id="button"><span>&#9776;</span><span>X</span></button>-->
+            <ul id="ulList">
+              <li><a href="../final_project/home.html">Home</a></li>
+              <li><a href="../final_project/fresh.html">Fresh</a></li>
+              <li><a href="../final_project/aboutus.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="subitem social">
+            <a href="https://www.twitter.com"><img class="social_icon" src="../final_project/images/twitter.jpg" width="42" height="42" alt="twitter"></a>
+            <a href="https://www.instagram.com"><img class="social_icon" src="../final_project/images/instagram.jpg" width="42" height="42" alt="instagram"></a>
+            <a href="https://www.facebook.com"><img class="social_icon" src="../final_project/images/facebook.jpg" width="42" height="42" alt="facebook"></a>
+        </div>
+        </div> 
+    </div>
+    
+    <div id="containerAboutUs" >
+
+        <div class="contactusForm">
+            <h1 id="titlecontactusForm">ABOUT US</h1>
+        </div>
+
+        <div class="locations">
+            
+            <h3 class="contactusTitle">THE BEGINNING!</h3>
+            <p class="abouttxt">Our company was born in 2018, after realizing the lack of 
+                supply of good fruit products that are 100% natural and 
+                free of products that are harmful to our health. We noticed 
+                that in addition to fruits, people close to tourist spots 
+                are looking for some type of refreshment. Nothing is more 
+                convenient than combining fruits and various juices!</p>
+            <img id="i" src="../final_project/images/juice_fruit2.jpg" alt= "fruits and juice">
+            <hr>
+            <h1 id="titlelocations">Visit Our Office or our Fruit Trucks</h1><a href="https://www.google.com/maps/d/u/0/edit?mid=10i9b7oMGGjrPWN-9bxrx2YkxE7vPfDQ&usp=sharing">
+                <img id="maploc" src="../final_project/images/store_locations.jpg" alt="Click to open the Map">
+            </a>
+        </div>
+
+
+        <div class="contactusBox">
+            <h3 class="contactusTitle">Contact us</h3>
+            <hr>
+            <h4 class="cttTitle"><span>&#9993;</span> Address</h4>
+                <p>Bountiful Foods</p>
+                <p>2599 San Carlos St</p>
+                <p>Carlsbad, CA, EUA</p>
+                <p>ZIP 92008</p>
+            <h4 class="cttTitle"><span>&#9742; Phone</span></h4>
+                <p>+1 987 654-3210</p>
+            <h4 class="cttTitle"><span>&#64;</span> Email</h4>
+                <p>info@brecoco.com</p>
+            <h4 class="cttTitle"><span>&#9888;</span> Office hours:</h4>
+                <p>Mon-Friday: 8:00AM - 6:00PM / Saturdays - Sundays: 8:00AM - 12:00PM.</p>
+        </div> 
+
+        <div class="pointsofContact">
+            <h3 id="pointsTitle">Points of Contact</h3>
+            <hr>
+            <h4 class="cttTitle">Joseph Smith</h4>
+                <p>President & CEO</p>
+                <p>+1 987 654-3211</p>
+            <h4 class="cttTitle">Mary Smith</h4>
+                <p>Vice President of Marketing and Communications</p>
+                <p>+1 987 654-3212</p>
+            <h4 class="cttTitle">John Snow</h4>
+                <p>Membership Director</p>
+                <p>+1 987 654-3213</p>
+            <h4 class="cttTitle">Madelaine Doe</h4>
+                <p>Operations Assistant</p>
+                <p>+1 987 654-3214</p>
+        </div> 
+
+
+        <div class="cformHTML">
+          
+          <form method="get" action="thanksContact.html">
+            
+            <h3 class="contactusTitle">Or send us a message!</h3>
+            <fieldset>
+              <legend>Contact Form</legend>
+              <label class="top">Name* <input type="text" name="fname" required></label>
+              <label class="top">Email* <input type="email" name="email" placeholder= "someone@gmail.com" required></label>
+              <label  class="top" for="textbox">A brief description of your question/concern:</label>
+              <textarea id="textbox" name="msgbox" maxlength="200" rows="5"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit" class="submitBtn">
+            <div>
+              <p id="subtime" style="display: none;"></p>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="item footer">
+            <picture class="fimage">
+                <img id="imglogo" src="../final_project/images/logo.png" alt= "fruits logo">
+            </picture>  
+            <section class="subitem ftitle">         
+                <h3>Bountiful Foods</h3>
+                <h4>2599 State St<br> Carlsbad, CA 92008, EUA</h4>
+                <div class="VisDate">
+                    <h4 class="VisitDate">Number of Visits:  <span class="visits"></span></h4>   
+                    <h4 class="VisitDate">Days since last visited:  <span id="VisitedLast"></span></h4>
+                </div>    
+            </section>
+            <div class="subitem contactinfo">
+                <h2>info@brecoco.com</h2>
+                <h2>+(55)11 9999-9999 </h2>
+              </div>
+              <div class="developerinfo">
+                &copy; <span id="year"></span> | Thiago Silva | Brazil | <a href="http://www.byui.edu/online/" target="_blank">BYU-I Online Learning</a> | Last  Updated: <span id="updated">
+                </span>  
+              </div>
+        </div>
+    </div>		
+    <script src="../chamber/scripts/date.js"></script> 
+    <script src="../chamber/scripts/menu_open.js"></script> 
+    <script src="../chamber/scripts/banner.js"></script>
+    <script src="../chamber/scripts/windchill.js"></script>
+    <script src="../chamber/scripts/lazyLoading.js"></script>
+    <script src="../chamber/scripts/localStorage.js"></script>
+
+</body>
+</html>
