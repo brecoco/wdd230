@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Build</title>
+    <meta name="description" content="Creating a table using HTML and CSS">
+    <link href="styles/tablecss.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <table>
+        <thead >
+          <tr>
+            <th class="sales" colspan="2" scope="colgroup">Sales</th>
+          </tr>
+          <tr>
+            <th class="head" scope="col">Month</th>
+            <th class="head" scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>July</td>
+            <td>3,000</td>
+          </tr>
+          <tr>
+            <td>August</td>
+            <td class="highlight">8,000</td>
+          </tr>
+          <tr>
+            <td>September</td>
+            <td>4,000</td>
+          </tr>
+          <tr>
+            <td>October</td>
+            <td>3,000</td>
+          </tr>
+          <tr>
+            <td>November</td>
+            <td>2,000</td>
+          </tr>
+        </tbody>
+        <caption>
+          Table 1: Wasatch Sales
+        </caption>
+      </table>
+    </main>
+  </body>
+</html>
